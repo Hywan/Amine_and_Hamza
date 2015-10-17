@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>Amine and Hamza</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="content-type" content="text/javascript; charset=utf-8" />
+  <meta http-equiv="content-type" content="text/css; charset=utf-8" />
+
+  <meta name="viewport" content="initial-scale=1.0" />
+
+  <link rel="stylesheet" href="Static/Css/Layout.css" type="text/css" />
+  <link rel="stylesheet" href="Static/Css/UI.css" type="text/css" />
+</head>
+<body>
+
+<script type="text/x-handlebars">
+  <nav>
+    <ul>
+      <li>{{#link-to 'about' class="button button--light"}}About us{{/link-to}}</li>
+      <li>{{#link-to 'band' class="button button--light"}}The band beyond borders{{/link-to}}</li>
+      <li>{{#link-to 'dates' class="button button--light"}}Dates{{/link-to}}</li>
+      <li>{{#link-to 'discography' class="button button--light"}}Discography{{/link-to}}</li>
+      <li>{{#link-to 'gallery' class="button button--light"}}Gallery{{/link-to}}</li>
+      <li>{{#link-to 'contact' class="button button--light"}}Contact{{/link-to}}</li>
+    </ul>
+  </nav>
+
+  {{outlet}}
+
+  <footer>
+    <section>
+      <h2>Contact us</h2>
+
+      <form>
+        <label for="contact_private">Private</label>
+        <input type="radio" id="contact_private" name="contact_type" value="private" />
+
+        <label for="contact_professional">Professional</label>
+        <input type="radio" id="contact_professional" name="contact_type" value="professional" />
+
+        <label for="contact_email">Email:</label>
+        <input type="text" id="contact_email" />
+
+        <label for="contact_name">Name:</label>
+        <input type="text" id="contact_name" name="contact_name" />
+
+        <label for="contact_message">Message:</label>
+        <textarea id="contact_message" name="contact_message"></textarea>
+      </form>
+
+      <h2>Links</h2>
+
+      <h2>Social</h2>
+    </section>
+
+    <section>
+      <p>
+        <img
+          src="/Static/Image/Logo.png"
+          alt="Logo of Amine and Hamza"
+          class="logo" />
+        © 2015 Amine &amp; Hamza. All right reserved. Designed by Alexandra
+        Romanesco
+
+        <span style="float right">
+          youtube
+          facebook
+          google+
+        </span>
+      </p>
+    </section>
+  </footer>
+</script>
+
+<script type="text/x-handlebars" id="index">
+  <header>
+    Amine <strong>&amp;</strong> Hamza<br />
+    <span style="text-decoration: underline">Two brothers One passion</span>
+  </header>
+
+  <main>
+    <article>
+      <section>
+        <h2>Albums</h2>
+      </section>
+
+      <section>
+        <h2>Last Dates</h2>
+
+        <p class="subtitle-h2">
+          Follow us to our amazing tours in this 2015 all around the world
+        </p>
+
+        <table class="dates">
+          <tbody>
+            <tr>
+              <td colspan="4" class="dates__year">2015</td>
+            </tr>
+            <tr>
+              <td class="dates__date"><time>23 jun</time></td>
+              <td class="dates__title">Perpetual worldtour 2015</td>
+              <td class="dates__location">Somewhere…</td>
+              <td class="dates__details"><a class="button">details</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <p>Live concert</p>
+      </section>
+
+      <section>
+        <h2>Gallery</h2>
+      </section>
+    </article>
+  </main>
+</script>
+
+<script type="text/x-handlebars" id="about">
+  <header>
+    …
+  </header>
+
+  <main>
+    <article></article>
+  </main>
+</script>
+
+<script src="Static/Vendor/jquery/dist/jquery.min.js"></script>
+<script src="Static/Vendor/ember/ember.min.js"></script>
+<script src="Static/Vendor/ember/ember-template-compiler.js"></script>
+<script src="Static/Vendor/ember-data/ember-data.min.js"></script>
+<script src="Static/Javascript/Application.js"></script>
+
+</body>
+</html>

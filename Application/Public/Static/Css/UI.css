@@ -1,0 +1,119 @@
+@font-face {
+    font-family: Text;
+    src: url('../Font/Roboto-Thin.woff') format('woff'),
+         url('../Font/Roboto-Thin.eot')  format('eot'),
+         url('../Font/Roboto-Thin.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Text;
+    src: url('../Font/Roboto-Bold.woff') format('woff'),
+         url('../Font/Roboto-Bold.eot')  format('eot'),
+         url('../Font/Roboto-Bold.ttf')  format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font: 1.2em/1.5em Text;
+    color: rgb(149, 149, 149);
+    background: rgb(37, 37, 37);
+}
+
+nav {
+    line-height: 3em;
+}
+
+section:nth-child(2n+1) {
+    background: rgb(54, 54, 54);
+}
+
+h1, h2, h3 {
+    color: rgb(214, 214, 214);
+    font-weight: normal;
+}
+
+section {
+    padding: 3em 4em;
+}
+
+    section h2 {
+        font-size: 220%;
+        line-height: 2.5em;
+        text-align: center;
+    }
+
+    section .subtitle-h2 {
+        text-align: center;
+    }
+
+footer {
+    font-size: 70%;
+}
+
+    footer h2 {
+        font-size: 140%;
+        font-variant: all-small-caps;
+        font-weight: bold;
+        text-align: inherit;
+    }
+
+    footer .logo {
+        height: 4em;
+        margin-right: 1em;
+        vertical-align: middle;
+    }
+
+table.dates {
+    color: rgb(254, 254, 254);
+    font-weight: bold;
+    max-width: 600px;
+}
+    table.dates td {
+        border-bottom: 1px rgb(59, 59, 59) solid;
+    }
+
+    table.dates td:last-child {
+        border-bottom: none;
+    }
+
+    td.dates__year {
+        color: rgb(149, 149, 149);
+        font-size: 120%;
+        font-weight: bold;
+        line-height: 1.8em;
+        text-align: center;
+        border-bottom: 1px orange solid;
+    }
+
+    td.dates__date {
+        font-variant: all-small-caps;
+    }
+
+    td.dates__title {
+        font-variant: all-small-caps;
+    }
+
+    td.dates__location {
+        color: rgb(149, 149, 149);
+    }
+
+.button {
+    cursor: pointer;
+    color: rgb(254, 254, 254);
+    font-weight: bold;
+    font-variant: all-small-caps;
+    text-decoration: none;
+    padding: .2em 1.1em .35em;
+    background: rgb(224, 167, 54);
+}
+
+    .button:hover {
+        background: rgb(224, 167, 54);
+    }
+
+    .button--light {
+        background: transparent;
+    }

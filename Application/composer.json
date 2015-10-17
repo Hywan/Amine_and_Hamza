@@ -1,0 +1,14 @@
+{
+    "require": {
+        "hoa/router": "^2.15",
+        "hoa/dispatcher": "0.15.05.29",
+        "hoa/console": "2.15.07.27",
+        "hoa/file": "0.15.05.27",
+        "hoa/mime": "2.15.07.28"
+    },
+    "autoload": {
+        "psr-4": {
+            "Application\\": "."
+        }
+    }
+}
