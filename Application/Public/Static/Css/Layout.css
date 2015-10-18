@@ -14,3 +14,7 @@ nav { }
     nav > ul > li {
        display: inline-block;
     }
+
+[aria-hidden="true"] {
+     display: none;
+}

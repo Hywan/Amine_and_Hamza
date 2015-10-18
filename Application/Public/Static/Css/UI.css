@@ -24,7 +24,18 @@ body {
 
 nav {
     line-height: 3em;
+    max-height: 3em;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
+
+    nav img {
+        max-height: 9em;
+        margin-top: -.2em;
+        vertical-align: text-top;
+    }
 
 section:nth-child(2n+1) {
     background: rgb(54, 54, 54);
@@ -47,7 +58,18 @@ section {
 
     section .subtitle-h2 {
         text-align: center;
+        margin-bottom: 2em;
     }
+
+header {
+    position: relative;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 3em;
+    background-position: 50% 50%;
+    background-repeat: none;
+    background-size: cover;
+}
 
 footer {
     font-size: 70%;
@@ -69,13 +91,23 @@ footer {
 table.dates {
     color: rgb(254, 254, 254);
     font-weight: bold;
-    max-width: 600px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
+
+    table.dates tr {
+        line-height: 3.5em
+    }
+
     table.dates td {
         border-bottom: 1px rgb(59, 59, 59) solid;
     }
 
-    table.dates td:last-child {
+    table.dates td:not(:last-child) {
+        padding-right: 2em;
+    }
+
+    table.dates tr:last-child td {
         border-bottom: none;
     }
 
@@ -85,7 +117,7 @@ table.dates {
         font-weight: bold;
         line-height: 1.8em;
         text-align: center;
-        border-bottom: 1px orange solid;
+        border-bottom: 1px rgb(224, 167, 54) solid !important;
     }
 
     td.dates__date {
@@ -98,6 +130,8 @@ table.dates {
 
     td.dates__location {
         color: rgb(149, 149, 149);
+        font-size: 70%;
+        font-weight: normal;
     }
 
 .button {
@@ -116,4 +150,23 @@ table.dates {
 
     .button--light {
         background: transparent;
+    }
+
+ul[role="tablist"] {
+    list-style-type: none;
+    text-align: center;
+}
+
+    li[role="tab"] {
+        display: inline-block;
+        cursor: pointer;
+        border-bottom: 2px rgb(49, 49, 49) solid;
+    }
+
+    li[role="tab"]:not(:last-child) {
+        margin-right: 2em;
+    }
+
+    li[role="tab"][aria-selected="true"] {
+        border-color: rgb(224, 167, 54);
     }
