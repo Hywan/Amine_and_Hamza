@@ -42,18 +42,32 @@ nav {
         width: 134px;
     }
 
-section:nth-child(2n+1) {
-    background: rgb(54, 54, 54);
-}
-
 h1, h2, h3 {
     color: rgb(214, 214, 214);
     font-weight: normal;
 }
 
+header, section {
+    position: relative;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 3em;
+
+}
+
 section {
     padding: 3em 4em;
 }
+
+    section:nth-child(2n+1) {
+        background-image: rgb(54, 54, 54);
+    }
 
     section h2 {
         font-size: 220%;
@@ -65,16 +79,6 @@ section {
         text-align: center;
         margin-bottom: 2em;
     }
-
-header {
-    position: relative;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    margin-top: 3em;
-    background-position: 50% 50%;
-    background-repeat: none;
-    background-size: cover;
-}
 
 footer {
     font-size: 70%;
