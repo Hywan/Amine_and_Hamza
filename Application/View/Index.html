@@ -17,13 +17,13 @@
 <script type="text/x-handlebars">
   <nav>
     <ul>
-      <li>{{#link-to 'about' class="button button--light"}}About us{{/link-to}}</li>
-      <li>{{#link-to 'band' class="button button--light"}}The band beyond borders{{/link-to}}</li>
-      <li>{{#link-to 'dates' class="button button--light"}}Dates{{/link-to}}</li>
+      <li style="float: left">{{#link-to 'about' class="button button--light"}}About us{{/link-to}}</li>
+      <li style="float: left">{{#link-to 'band' class="button button--light"}}The band beyond borders{{/link-to}}</li>
+      <li style="float: left">{{#link-to 'dates' class="button button--light"}}Dates{{/link-to}}</li>
       <li>{{#link-to 'index'}}<img src="/Static/Image/Logo.png" alt="Logo of Amine and Hamza" />{{/link-to}}</li>
-      <li>{{#link-to 'discography' class="button button--light"}}Discography{{/link-to}}</li>
-      <li>{{#link-to 'gallery' class="button button--light"}}Gallery{{/link-to}}</li>
-      <li>{{#link-to 'contact' class="button button--light"}}Contact{{/link-to}}</li>
+      <li style="float: right">{{#link-to 'contact' class="button button--light"}}Contact{{/link-to}}</li>
+      <li style="float: right">{{#link-to 'gallery' class="button button--light"}}Gallery{{/link-to}}</li>
+      <li style="float: right">{{#link-to 'discography' class="button button--light"}}Discography{{/link-to}}</li>
     </ul>
   </nav>
 
@@ -101,6 +101,45 @@
     <article>
       <section>
         <h2>Albums</h2>
+
+        <p class="subtitle-h2">
+          Check out our newest music albums. You can easily purchase them on<br />
+          <a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewCollaboration?cc=ch&ids=387006385-387006388&l=en">iTunes</a> or
+          <a href="https://play.google.com/store/search?q=amine%20and%20hamza&c=music">Google Play</a>
+        </p>
+
+        <div class="albums">
+          <div class="album">
+            <img
+              src="/Static/Image/Album/Perpetual_motion_cover.jpg"
+              alt="Perpetual Motion"
+              class="album__cover" />
+            <span class="album__title">
+              Perpetual Motion
+              <time datetime="2012">(2012)</time>
+            </span>
+          </div>
+          <div class="album">
+            <img
+              src="/Static/Image/Album/Meni_nessi_cover.jpg"
+              alt="Meni nessi"
+              class="album__cover" />
+            <span class="album__title">
+              Meni Nessi
+              <time datetime="2007">(2007)</time>
+            </span>
+          </div>
+          <div class="album">
+            <img
+              src="/Static/Image/Album/Things_may_change_cover.jpg"
+              alt="Things may change"
+              class="album__cover" />
+            <span class="album__title">
+              Things may change
+              <time datetime="2006">(2006)</time>
+            </span>
+          </div>
+        </div>
       </section>
 
       <section>
