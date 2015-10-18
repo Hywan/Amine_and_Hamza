@@ -60,6 +60,13 @@ header {
     margin-top: 3em;
 
 }
+    header h1 {
+        font-size: 220%;
+        font-variant: all-small-caps;
+        line-height: 3em;
+        text-align: center;
+        margin-top: 5em;
+    }
 
 section {
     padding: 3em 4em;
@@ -157,7 +164,7 @@ table.dates {
     color: rgb(254, 254, 254);
     font-weight: bold;
     font-variant: all-small-caps;
-    text-decoration: none;
+    text-decoration: none !important;
     padding: .2em 1.1em .35em;
     background: rgb(224, 167, 54);
 }
@@ -198,6 +205,43 @@ table.dates {
            font-size: 70%;
            font-weight: normal;
        }
+
+dl.musicians { }
+
+    dl.musicians dt {
+        margin-right: 1em;
+        margin-bottom: .7em;
+        float: left;
+    }
+
+    dl.musicians dd {
+        margin-bottom: .7em;
+    }
+
+    dl.musicians dd::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    dl.musicians dd:not(:last-child)::after {
+        border-bottom: 1px rgb(59, 59, 59) solid;
+        margin-bottom: 1em;
+    }
+
+.musician__photo {
+    max-width: 12em;
+}
+
+.musician__name {
+    font-variant: all-small-caps;
+    font-weight: bold;
+}
+
+.musician__instrument {
+    font-size: 70%;
+    margin-bottom: .8em;
+}
 
 ul[role="tablist"] {
     list-style-type: none;
