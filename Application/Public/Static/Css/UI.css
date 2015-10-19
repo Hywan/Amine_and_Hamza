@@ -245,19 +245,30 @@ dl.musicians { }
         margin-bottom: 1em;
     }
 
-.musician__photo {
-    max-width: 12em;
+.musician {
+    display: inline-block;
 }
 
-.musician__name {
-    font-variant: all-small-caps;
-    font-weight: bold;
-}
+    .musician:not(:last-child) {
+        margin-right: 3em;
+    }
 
-.musician__instrument {
-    font-size: 70%;
-    margin-bottom: .8em;
-}
+    .musician__photo {
+        display: block;
+        max-width: 12em;
+    }
+
+    .musician__name {
+        display: block;
+        color: rgb(214, 214, 214);
+        font-variant: all-small-caps;
+        font-weight: bold;
+    }
+
+    .musician__instrument {
+        font-size: 70%;
+        margin-bottom: .8em;
+    }
 
 ul[role="tablist"] {
     list-style-type: none;
