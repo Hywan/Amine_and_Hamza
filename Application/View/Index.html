@@ -592,6 +592,31 @@
   </article>
 </script>
 
+<script type="text/x-handlebars" id="discography">
+  <header>
+    <h1>All albums</h1>
+  </header>
+
+  <article>
+    <section>
+      <div class="albums">
+        {{#each model as |album|}}
+          <div class="album">
+            <img
+              src="/Static/Image/Album/{{album.id}}_cover.jpg"
+              alt="{{album.title}}"
+              class="album__cover" />
+            <span class="album__title">
+              {{album.title}}
+              <time datetime="{{album.releaseYear}}">({{album.releaseYear}})</time>
+            </span>
+          </div>
+        {{/each}}
+      </div>
+    </section>
+  </article>
+</script>
+
 <script src="Static/Vendor/jquery/dist/jquery.min.js"></script>
 <script src="Static/Vendor/ember/ember.min.js"></script>
 <script src="Static/Vendor/ember/ember-template-compiler.js"></script>

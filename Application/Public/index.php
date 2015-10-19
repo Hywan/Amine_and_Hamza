@@ -33,6 +33,11 @@ $router
         'Dates'
     )
     ->get(
+        'discography',
+        '/api/discography',
+        'Discography'
+    )
+    ->get(
         'fallback',
         '/.*',
         'Fallback'

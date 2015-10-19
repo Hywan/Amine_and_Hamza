@@ -1,0 +1,57 @@
+[
+    {
+        "id": "Perpetual_motion",
+        "title": "Perpetual Motion",
+        "releaseYear": 2012,
+        "tracks": [
+            {
+                "title": "…",
+                "duration": "…"
+            }
+        ]
+    },
+    {
+        "id": "Meni_nessi",
+        "title": "Meni nessi",
+        "releaseYear": 2007,
+        "tracks": [
+            {
+                "title": "…",
+                "duration": "…"
+            }
+        ]
+    },
+    {
+        "id": "Things_may_change",
+        "title": "Things may change",
+        "releaseYear": 2006,
+        "tracks": [
+            {
+                "title": "…",
+                "duration": "…"
+            }
+        ]
+    },
+    {
+        "id": "Ila_hounak",
+        "title": "Ila Hounak",
+        "releaseYear": 2004,
+        "tracks": [
+            {
+                "title": "…",
+                "duration": "…"
+            }
+        ]
+    },
+    {
+        "id": "Asfar",
+        "title": "Asfar",
+        "releaseYear": 2004,
+        "tracks": [
+            {
+                "title": "…",
+                "duration": "…"
+            }
+        ]
+    }
+]

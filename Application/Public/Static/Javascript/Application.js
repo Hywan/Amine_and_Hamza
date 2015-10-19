@@ -53,3 +53,27 @@ Application.DatesRoute = Ember.Route.extend({
     }
 
 });
+
+/**
+ * Discography route.
+ */
+Application.DiscographyRoute = Ember.Route.extend({
+
+    model: function()
+    {
+        return new Ember.RSVP.Promise(
+            function (resolve, reject) {
+                $.getJSON(
+                    '/api/discography'
+                ).done(function (data) {
+                    for (var i = 0, max = data.length; i < max; ++i) {
+                        delete data.tracks;
+                    }
+
+                    resolve(data);
+                });
+            }
+        );
+    }
+
+});
