@@ -4,6 +4,7 @@ var Application = Ember.Application.create();
  * Set the root URL of the application.
  */
 Application.Router.reopen({
+    location: 'auto',
     rootURL: window.location.pathname
 });
 
