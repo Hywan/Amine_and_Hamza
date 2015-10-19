@@ -5,7 +5,7 @@ var Application = Ember.Application.create();
  */
 Application.Router.reopen({
     location: 'auto',
-    rootURL: window.location.pathname
+    rootURL: '/'
 });
 
 /**
@@ -68,7 +68,8 @@ Application.DiscographyRoute = Ember.Route.extend({
                     '/api/discography'
                 ).done(function (data) {
                     for (var i = 0, max = data.length; i < max; ++i) {
-                        delete data.tracks;
+                        data[i].cover = data[i].id.capitalizeFirstLetter() + '_cover';
+                        delete data[i].tracks;
                     }
 
                     resolve(data);
@@ -78,3 +79,7 @@ Application.DiscographyRoute = Ember.Route.extend({
     }
 
 });
+
+String.prototype.capitalizeFirstLetter = function () {
+    return this.charAt(0).toUpperCase() + this.slice(1);
+}
