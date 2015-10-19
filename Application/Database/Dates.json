@@ -1,13 +1,18 @@
 [
     {
+        "date"       : "2015-11-14",
+        "description": "Charity concert for Syrian refugees in Jordan",
+        "location"   : "Montreux, Switzerland"
+    },
+    {
         "date"       : "2015-11-08",
-        "description": "More information soon",
-        "location"   : "Valais, Switzerland"
+        "description": "Charratmuse",
+        "location"   : "Martigny, Switzerland"
     },
     {
         "date"       : "2015-11-07",
-        "description": "Tournée Romande",
-        "location"   : "Église de Saint-François, Lausanne, Switzerland"
+        "description": "Église de Saint-François",
+        "location"   : "Lausanne, Switzerland"
     },
     {
         "date"       : "2015-10-28",
@@ -16,7 +21,7 @@
     },
     {
         "date"       : "2015-09-18",
-        "description": "Festival Delle Tradizioni",
+        "description": "Festival Delle Tradizioni (feat. Karima Nayt)",
         "location"   : "Vicenza, Italy"
     },
     {
@@ -33,5 +38,125 @@
         "date"       : "2015-08-04",
         "description": "Festival Jazz en Rade",
         "location"   : "Vallée-de-Joux, Switzerland"
+    },
+    {
+        "date"       : "2015-04-01",
+        "description": "Mini-tour in Russia",
+        "location"   : "Omsk and Krasnojarsk, Russia"
+    },
+    {
+        "date"       : "2015-03-01",
+        "description": "Red Sunrise Project (feat. Baiju Bhaat)",
+        "location"   : "Lausanne, Switzerland"
+    },
+    {
+        "date"       : "2015-02-14",
+        "description": "Iranian tour",
+        "location"   : "Teheran and Isfahan, Iran"
+    },
+    {
+        "date"       : "2014-11-01",
+        "description": "Ouverture du Festival des Religions, Saint-François",
+        "location"   : "Lausanne, Switzerland"
+    },
+    {
+        "date"       : "2015-10-17",
+        "description": "Musicport festival",
+        "location"   : "Leeds, United-Kingdom"
+    },
+    {
+        "date"       : "2015-08-04",
+        "description": "Festival de Sainte-Croix",
+        "location"   : "Sainte-Croix, Switzerland"
+    },
+    {
+        "date"       : "2014-06-01",
+        "description": "Chorus Club, RTS and Hemu (feat. Baiju Bhaat)",
+        "location"   : "Switzerland"
+    },
+    {
+        "date"       : "2014-05-28",
+        "description": "Festival Arkhe",
+        "location"   : "Bussigny, Switzerland"
+    },
+    {
+        "date"       : "2014-04-16",
+        "description": "Philarmonic concert",
+        "location"   : "Omsk, Russia"
+    },
+    {
+        "date"       : "2014-03-30",
+        "description": "Torino folk club",
+        "location"   : "Torino, Italy"
+    },
+    {
+        "date"       : "2013-11-16",
+        "description": "Teatro Comunale",
+        "location"   : "Udine, Italy"
+    },
+    {
+        "date"       : "2013-11-15",
+        "description": "Teatro Comunale",
+        "location"   : "Vicenza, Italy"
+    },
+    {
+        "date"       : "2013-11-02",
+        "description": "Jazz onze plus",
+        "location"   : "Lausanne, Switzerland"
+    },
+    {
+        "date"       : "2013-10-19",
+        "description": "Musicport",
+        "location"   : "Leeds, United-Kingdom"
+    },
+    {
+        "date"       : "2013-10-05",
+        "description": "Octogone de Pully, programmation Amdathra",
+        "location"   : "Pully, Switzerland"
+    },
+    {
+        "date"       : "2013-09-26",
+        "description": "Serbian television concert",
+        "location"   : "Serbia"
+    },
+    {
+        "date"       : "2013-09-26",
+        "description": "Saint-Gall concert",
+        "location"   : "Saint-Gall, Switzerland"
+    },
+    {
+        "date"       : "2013-08-03",
+        "description": "Festival del mare",
+        "location"   : "Polignano, Italy"
+    },
+    {
+        "date"       : "2013-06-02",
+        "description": "Printemps musicaux",
+        "location"   : "La Sarraz, Switzerland"
+    },
+    {
+        "date"       : "2013-05-14",
+        "description": "Faruk tunuz workshop",
+        "location"   : "Istanbul, Turkey"
+    },
+    {
+        "date"       : "2013-05-05",
+        "description": "Théâtre de la Reine Blanche",
+        "location"   : "Paris, France"
+    },
+    {
+        "date"       : "2013-04-27",
+        "description": "City Club Pully",
+        "location"   : "Pully, Switzerland"
+    },
+    {
+        "date"       : "2013-04-20",
+        "description": "Mozarthall",
+        "location"   : "Stuttgart, Germany"
+    },
+    {
+        "date"       : "2013-03-24",
+        "description": "Centre des loisirs et des cultures",
+        "location"   : "Martigny, Switzerland"
     }
 ]
