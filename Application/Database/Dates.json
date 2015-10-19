@@ -1,0 +1,37 @@
+[
+    {
+        "date"       : "2015-11-08",
+        "description": "More information soon",
+        "location"   : "Valais, Switzerland"
+    },
+    {
+        "date"       : "2015-11-07",
+        "description": "Tournée Romande",
+        "location"   : "Église de Saint-François, Lausanne, Switzerland"
+    },
+    {
+        "date"       : "2015-10-28",
+        "description": "Aktionshalle Standzerei",
+        "location"   : "Baden, Switzerland"
+    },
+    {
+        "date"       : "2015-09-18",
+        "description": "Festival Delle Tradizioni",
+        "location"   : "Vicenza, Italy"
+    },
+    {
+        "date"       : "2015-09-06",
+        "description": "Festival des Musiques Juives (feat. Nathalie El-Baze)",
+        "location"   : "Lausanne, Switzerland"
+    },
+    {
+        "date"       : "2015-08-22",
+        "description": "Scènes du chapiteau",
+        "location"   : "Romainmôtier, Switzerland"
+    },
+    {
+        "date"       : "2015-08-04",
+        "description": "Festival Jazz en Rade",
+        "location"   : "Vallée-de-Joux, Switzerland"
+    }
+]

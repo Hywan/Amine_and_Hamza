@@ -28,6 +28,11 @@ $router
 
     // Public rules.
     ->get(
+        'dates',
+        '/api/dates',
+        'Dates'
+    )
+    ->get(
         'fallback',
         '/.*',
         'Fallback'

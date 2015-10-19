@@ -151,25 +151,40 @@
       <table class="dates">
         <tbody>
           <tr>
-            <td colspan="4" class="dates__year">2015</td>
+            <td colspan="4" class="date__year">2015</td>
           </tr>
           <tr>
-            <td class="dates__date"><time>23 jun</time></td>
-            <td class="dates__title">Perpetual worldtour 2015</td>
-            <td class="dates__location">Somewhere…</td>
-            <td class="dates__details"><a class="button">details</a></td>
+            <td class="date__date">
+              <time>
+                <span class="date__date_day">23</span>
+                <span class="date__date_month">jun</span>
+              </time>
+            </td>
+            <td class="date__title">Perpetual worldtour 2015</td>
+            <td class="date__location">Somewhere…</td>
+            <td class="date__details"><a class="button">details</a></td>
           </tr>
           <tr>
-            <td class="dates__date"><time>04 May</time></td>
-            <td class="dates__title">Mani Nassi Show</td>
-            <td class="dates__location">1560 Broadwat, Suite 800, New York, NY</td>
-            <td class="dates__details"><a class="button">details</a></td>
+            <td class="date__date">
+              <time>
+                <span class="date__date_day">04</span>
+                <span class="date__date_month">may</span>
+              </time>
+            </td>
+            <td class="date__title">Mani Nassi Show</td>
+            <td class="date__location">1560 Broadwat, Suite 800, New York, NY</td>
+            <td class="date__details"><a class="button">details</a></td>
           </tr>
           <tr>
-            <td class="dates__date"><time>17 Apr</time></td>
-            <td class="dates__title">Moonsoon Music Festival</td>
-            <td class="dates__location">Queen Stage, North Elizabeth Park, London, UK</td>
-            <td class="dates__details"><a class="button">details</a></td>
+            <td class="date__date">
+              <time>
+                <span class="date__date_day">17</span>
+                <span class="date__date_month">apr</span>
+              </time>
+            </td>
+            <td class="date__title">Moonsoon Music Festival</td>
+            <td class="date__location">Queen Stage, North Elizabeth Park, London, UK</td>
+            <td class="date__details"><a class="button">details</a></td>
           </tr>
         </tbody>
       </table>
@@ -244,11 +259,50 @@
 
 <script type="text/x-handlebars" id="about">
   <header>
-    …
+    <h1>About us</h1>
+    <img src="/Static/Image/Header.jpg" style="max-height: 20em" />
   </header>
 
   <main>
-    <article></article>
+    <article>
+      <section>
+        <h2>Amine and Hamza</h2>
+
+        <p>
+          Amine and Hamza M'raihi are two Tunisian musician brothers, playing
+          respectively the oud and the qanun, the two major instruments of the
+          classical Arabic music.
+        </p>
+        <p>
+          Since a very young age, the brothers were raised with classical Arab
+          music which allowed them to develop an extensive mastery of their
+          instruments. They have since then evolved into diverse musical
+          traditions including classical western music, jazz, flamenco, Indian,
+          Persian music and many others. Amine and Hamza are leaders of a new
+          voice into the Arabic music scenery; anchored in the classical Arabic
+          tradition but opened on the diverse musical styles. They are the image
+          of a new generation, proud of their multiple identities but open and
+          tolerant towards other cultures.
+        </p>
+        <p>
+          Amine and Hamza have performed in many prestigious scenes all over the
+          world, including the Arab World Institute in Paris, the BBC, the
+          Medina Theatre in Beirut and the Cairo Opera house. They have recorded
+          and published seven albums featuring musicians from all over the world
+          and from different musical traditions.
+        </p>
+        <p>
+          Their latest project, No Borders, dives even deeper in modern
+          harmonies, hypnotic grooves and profound feeling, and features french
+          clarinetist Blaise Ubaldini and swiss-indian violinist Baiju Bhatt, as
+          well as polish bassist Lukacz and swedish percussionist Fredrik.
+        </p>
+      </section>
+
+      <section>
+        <h2>The musicians</h2>
+      </section>
+    </article>
   </main>
 </script>
 
@@ -327,10 +381,39 @@
   </article>
 </script>
 
+<script type="text/x-handlebars" id="dates">
+  <header>
+    <h1>Past and Next dates</h1>
+  </header>
+
+  <article>
+    <section>
+      <table class="dates">
+        <tbody>
+          {{#each model as |date|}}
+            <tr>
+              <td class="date__date">
+                <time datetime="{{date.date}}">
+                  <span class="date__date_day">{{date.date_day}}</span>
+                  <span class="date__date_month">{{date.date_month}}</span>
+                </time>
+              </td>
+              <td class="date__title">{{date.description}}</td>
+              <td class="date__location">{{date.location}}</td>
+              <td class="date__details"><a class="button">details</a></td>
+            </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </section>
+  </article>
+</script>
+
 <script src="Static/Vendor/jquery/dist/jquery.min.js"></script>
 <script src="Static/Vendor/ember/ember.min.js"></script>
 <script src="Static/Vendor/ember/ember-template-compiler.js"></script>
 <script src="Static/Vendor/ember-data/ember-data.min.js"></script>
+<script src="Static/Vendor/moment/min/moment.min.js"></script>
 <script src="Static/Javascript/Application.js"></script>
 
 </body>

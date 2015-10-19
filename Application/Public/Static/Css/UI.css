@@ -113,6 +113,10 @@ a {
         text-decoration: underline;
     }
 
+p + p {
+    margin-top: .8em;
+}
+
 table.dates {
     color: rgb(254, 254, 254);
     font-weight: bold;
@@ -136,7 +140,7 @@ table.dates {
         border-bottom: none;
     }
 
-    td.dates__year {
+    .date__year {
         color: rgb(149, 149, 149);
         font-size: 120%;
         font-weight: bold;
@@ -145,15 +149,27 @@ table.dates {
         border-bottom: 1px rgb(224, 167, 54) solid !important;
     }
 
-    td.dates__date {
+    .date__date {
+        font-variant: all-small-caps;
+        line-height: 1.1em;
+        text-align: center;
+    }
+
+    .date__date_day {
+        display: block;
+        color: rgb(224, 167, 54);
+        font-size: 160%;
+    }
+
+    .date__date_month {
+        font-size: 80%;
+    }
+
+    .date__title {
         font-variant: all-small-caps;
     }
 
-    td.dates__title {
-        font-variant: all-small-caps;
-    }
-
-    td.dates__location {
+    .date__location {
         color: rgb(149, 149, 149);
         font-size: 70%;
         font-weight: normal;
