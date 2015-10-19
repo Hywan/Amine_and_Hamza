@@ -9,8 +9,8 @@
 
   <meta name="viewport" content="initial-scale=1.0" />
 
-  <link rel="stylesheet" href="Static/Css/Layout.css" type="text/css" />
-  <link rel="stylesheet" href="Static/Css/UI.css" type="text/css" />
+  <link rel="stylesheet" href="/Static/Css/Layout.css" type="text/css" />
+  <link rel="stylesheet" href="/Static/Css/UI.css" type="text/css" />
 </head>
 <body>
 
@@ -594,14 +594,19 @@
 
 <script type="text/x-handlebars" id="discography">
   <header>
-    <h1>All albums</h1>
+    <h1>Discography</h1>
   </header>
 
   <article>
+    <div data-anchor="album" />
+    {{outlet}}
+
     <section>
+      <h2>All albums</h2>
+
       <div class="albums">
         {{#each model as |album|}}
-          <div class="album">
+          {{#link-to 'discography.album' album.id class="album"}}
             <img
               src="/Static/Image/Album/{{album.cover}}.jpg"
               alt="{{album.title}}"
@@ -610,19 +615,30 @@
               {{album.title}}
               <time datetime="{{album.releaseYear}}">({{album.releaseYear}})</time>
             </span>
-          </div>
+          {{/link-to}}
         {{/each}}
       </div>
     </section>
   </article>
 </script>
 
-<script src="Static/Vendor/jquery/dist/jquery.min.js"></script>
-<script src="Static/Vendor/ember/ember.min.js"></script>
-<script src="Static/Vendor/ember/ember-template-compiler.js"></script>
-<script src="Static/Vendor/ember-data/ember-data.min.js"></script>
-<script src="Static/Vendor/moment/min/moment.min.js"></script>
-<script src="Static/Javascript/Application.js"></script>
+<script type="text/x-handlebars" id="discography/album">
+  <section id="album">
+    <h2>{{model.title}}</h2>
+
+    <img
+      src="/Static/Image/Album/{{model.cover}}.jpg"
+      alt="{{model.title}}"
+      class="album__cover" />
+  </section>
+</script>
+
+<script src="/Static/Vendor/jquery/dist/jquery.min.js"></script>
+<script src="/Static/Vendor/ember/ember.min.js"></script>
+<script src="/Static/Vendor/ember/ember-template-compiler.js"></script>
+<script src="/Static/Vendor/ember-data/ember-data.min.js"></script>
+<script src="/Static/Vendor/moment/min/moment.min.js"></script>
+<script src="/Static/Javascript/Application.js"></script>
 
 </body>
 </html>

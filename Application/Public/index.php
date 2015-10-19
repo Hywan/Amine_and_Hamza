@@ -38,6 +38,11 @@ $router
         'Discography'
     )
     ->get(
+        'album',
+        '/api/album/(?<albumId>.+)',
+        'Album'
+    )
+    ->get(
         'fallback',
         '/.*',
         'Fallback'

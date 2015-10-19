@@ -15,9 +15,35 @@ Application.Router.map(function () {
     this.route('about', {path: 'about-us'});
     this.route('band', {path: 'the-band'});
     this.route('dates');
-    this.route('discography');
+    this.route('discography', function () {
+        this.route('album', {path: ':album_id'});
+    });
     this.route('gallery');
     this.route('contact');
+});
+
+/**
+ * About route.
+ */
+Application.AboutRoute = Ember.Route.extend({
+
+    activate: function ()
+    {
+        resetScroll();
+    }
+
+});
+
+/**
+ * Band route.
+ */
+Application.BandRoute = Ember.Route.extend({
+
+    activate: function ()
+    {
+        resetScroll();
+    }
+
 });
 
 /**
@@ -25,7 +51,12 @@ Application.Router.map(function () {
  */
 Application.DatesRoute = Ember.Route.extend({
 
-    model: function()
+    activate: function ()
+    {
+        resetScroll();
+    },
+
+    model: function ()
     {
         return new Ember.RSVP.Promise(
             function (resolve, reject) {
@@ -60,7 +91,12 @@ Application.DatesRoute = Ember.Route.extend({
  */
 Application.DiscographyRoute = Ember.Route.extend({
 
-    model: function()
+    activate: function ()
+    {
+        resetScroll();
+    },
+
+    model: function ()
     {
         return new Ember.RSVP.Promise(
             function (resolve, reject) {
@@ -80,6 +116,51 @@ Application.DiscographyRoute = Ember.Route.extend({
 
 });
 
+/**
+ * Album controller.
+ */
+Application.DiscographyAlbumController = Ember.Controller.extend({
+
+    resetScroll: function () {
+        resetScroll('[data-anchor="album"]');
+    }.observes('model')
+
+});
+
+/**
+ * Album route.
+ */
+Application.DiscographyAlbumRoute = Ember.Route.extend(Application.ResetScroll, {
+
+    model: function (params, transition)
+    {
+        return new Ember.RSVP.Promise(
+            function (resolve, reject) {
+                $.getJSON(
+                    '/api/album/' + transition.params['discography.album'].album_id
+                ).done(function (data) {
+                    data.cover = data.id.capitalizeFirstLetter() + '_cover';
+
+                    resolve(data);
+                });
+            }
+        );
+    }
+
+});
+
 String.prototype.capitalizeFirstLetter = function () {
     return this.charAt(0).toUpperCase() + this.slice(1);
+}
+
+function resetScroll(selector)
+{
+    var selector = $(selector);
+
+    $('html').animate(
+        {
+            scrollTop: selector.length ? selector.offset().top : 0
+        },
+        300
+    );
 }
