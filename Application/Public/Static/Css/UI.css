@@ -192,6 +192,7 @@ table.dates {
     background: rgb(224, 167, 54);
 }
 
+    .button.active,
     .button:hover {
         background: rgb(224, 167, 54);
     }
@@ -207,6 +208,7 @@ table.dates {
 .album {
     display: inline-block;
     width: 320px;
+    margin-bottom: 2em;
 }
 
     .album.active {

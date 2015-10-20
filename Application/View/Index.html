@@ -82,35 +82,44 @@
 
       <div class="albums">
         <div class="album">
-          <img
-            src="/Static/Image/Album/Perpetual_motion_cover.jpg"
-            alt="Perpetual Motion"
-            class="album__cover" />
-          <span class="album__title">
-            Perpetual Motion
-            <time datetime="2012">(2012)</time>
-          </span>
+          {{#link-to 'discography.album' 'perpetual_motion'}}
+            <img
+              src="/Static/Image/Album/Perpetual_motion_cover.jpg"
+              alt="Perpetual Motion"
+              class="album__cover" />
+            <span class="album__title">
+              Perpetual Motion
+              <time datetime="2012">(2012)</time>
+            </span>
+          {{/link-to}}
         </div>
         <div class="album">
-          <img
-            src="/Static/Image/Album/Meni_nessi_cover.jpg"
-            alt="Meni nessi"
-            class="album__cover" />
-          <span class="album__title">
-            Meni Nessi
-            <time datetime="2007">(2007)</time>
-          </span>
+          {{#link-to 'discography.album' 'meni_nessi'}}
+            <img
+              src="/Static/Image/Album/Meni_nessi_cover.jpg"
+              alt="Meni nessi"
+              class="album__cover" />
+            <span class="album__title">
+              Meni Nessi
+              <time datetime="2007">(2007)</time>
+            </span>
+          {{/link-to}}
         </div>
         <div class="album">
-          <img
-            src="/Static/Image/Album/Things_may_change_cover.jpg"
-            alt="Things may change"
-            class="album__cover" />
-          <span class="album__title">
-            Things may change
-            <time datetime="2006">(2006)</time>
-          </span>
+          {{#link-to 'discography.album' 'things_may_change'}}
+            <img
+              src="/Static/Image/Album/Things_may_change_cover.jpg"
+              alt="Things may change"
+              class="album__cover" />
+            <span class="album__title">
+              Things may change
+              <time datetime="2006">(2006)</time>
+            </span>
+          {{/link-to}}
         </div>
+      </div>
+      <div style="text-align: center; margin-top: 2em">
+        {{#link-to 'discography' class="button"}}More albums{{/link-to}}
       </div>
     </section>
 
