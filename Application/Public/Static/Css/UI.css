@@ -226,6 +226,45 @@ table.dates {
            font-weight: normal;
        }
 
+.album-player {
+    overflow: auto;
+    padding: .5em 0;
+}
+
+    .album-player__information {
+        float: left;
+        display: table;
+        border-collapse: separate;
+    }
+
+        .album-player__information > * {
+            display: table-row;
+        }
+
+    .album-player__buy {
+        text-align: center;
+        line-height: 2em;
+    }
+
+    .album-player__tracks {
+        float: right;
+        list-style-type: none;
+        min-width: 50%;
+    }
+
+    .album-player__track {
+        color: rgb(214, 214, 214);
+        font-size: 80%;
+        font-weight: bold;
+        padding: 1em 0 2em 0;
+        border-top: 2px rgb(75, 75, 76) solid;
+    }
+
+       .album-player__track time {
+            float: right;
+            margin-left: 3em;
+       }
+
 dl.musicians { }
 
     dl.musicians dt {

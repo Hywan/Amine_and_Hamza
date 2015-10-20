@@ -504,7 +504,7 @@
               Fredrik Gille is a percussionist from Stockholm, Sweden. He
               collects instruments, playing-techniques and inspiration from
               percussion-traditions all around the world.
-            </p> 
+            </p>
             <p>
               He has a great passion for worldwide percussion-traditions and has
               collected a unique set of instruments —a constantly growing
@@ -598,10 +598,31 @@
   <section id="album">
     <h2>{{model.title}}</h2>
 
-    <img
-      src="/Static/Image/Album/{{model.cover}}.jpg"
-      alt="{{model.title}}"
-      class="album__cover" />
+    <div class="album-player">
+      <div class="album-player__information">
+        <img
+          src="/Static/Image/Album/{{model.cover}}.jpg"
+          alt="{{model.title}}"
+          class="album__cover" />
+        <span class="album__title">
+          {{model.title}}
+          <time datetime="{{model.releaseYear}}">({{model.releaseYear}})</time>
+        </span>
+        <br />
+        <a class="album-player__buy button">Buy on Apple iTunes</a>
+        <br />
+        <a class="album-player__buy button">Buy on Google Play</a>
+      </div>
+
+      <ol class="album-player__tracks">
+        {{#each model.tracks as |track|}}
+          <li class="album-player__track">
+            {{track.title}}
+            <time>{{track.duration}}</time>
+          </li>
+        {{/each}}
+      </ol>
+    </div>
   </section>
 </script>
 
