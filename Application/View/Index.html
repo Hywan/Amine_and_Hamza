@@ -22,7 +22,7 @@
       <li style="float: left">{{#link-to 'dates' class="button button--light"}}Dates{{/link-to}}</li>
       <li>{{#link-to 'index'}}<img src="/Static/Image/Logo.png" alt="Logo of Amine and Hamza" />{{/link-to}}</li>
       <li style="float: right">{{#link-to 'contact' class="button button--light"}}Contact{{/link-to}}</li>
-      <li style="float: right">{{#link-to 'gallery' class="button button--light"}}Gallery{{/link-to}}</li>
+      <li style="float: right">{{#link-to 'videos' class="button button--light"}}Videos{{/link-to}}</li>
       <li style="float: right">{{#link-to 'discography' class="button button--light"}}Discography{{/link-to}}</li>
     </ul>
   </nav>
@@ -225,16 +225,14 @@
       min-height: 24em;
       background-image: url('/Static/Image/Concert__header.jpg')
       ">
-      <svg
-        viewBox="0 0 100 100"
+      <img
+        src="/Static/Image/Play.svg"
+        alt="Play"
         style="
           margin-top: 2em;
           width: 6em;
           height: 6em
         ">
-        <circle cx="50" cy="50" r="25" fill="rgb(224, 167, 54)" />
-        <polygon points="45,42 45,58 60,50" fill="rgb(254, 254, 254)" />
-      </svg>
       <h2 style="margin-top: -1.2em">Live Concert in Geneva</h2>
       <p>
         The Perpetual Motion album is now available on
@@ -621,6 +619,41 @@
       </ol>
     </div>
   </section>
+</script>
+
+<script type="text/x-handlebars" id="videos">
+  <header>
+    <h1>Videos</h1>
+  </header>
+
+  <article>
+    <section>
+      <h2>Latest videos</h2>
+
+      <div class="videos">
+        {{#each model as |video|}}
+          <div class="video">
+            <a
+              href="{{video.url}}"
+              target="_blank"
+              title="Watch “{{video.title}}” on Youtube"
+              class="video__link">
+              <img
+                src="{{video.poster}}"
+                class="video__poster" />
+            </a>
+            <span class="video__title">{{video.title}}</span>
+            <span class="video__published">{{video.published_for_human}}</span>
+            <span class="video__description">{{{video.description}}}</span>
+          </div>
+        {{/each}}
+      </div>
+
+      <div style="text-align: center; margin-top: 2em">
+        <a href="https://www.youtube.com/user/amineandhamza/videos" target="_blank" class="button">View all videos</a>
+      </div>
+    </section>
+  </article>
 </script>
 
 <script src="/Static/Vendor/jquery/dist/jquery.min.js"></script>

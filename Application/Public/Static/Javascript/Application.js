@@ -18,7 +18,7 @@ Application.Router.map(function () {
     this.route('discography', function () {
         this.route('album', {path: ':album_id'});
     });
-    this.route('gallery');
+    this.route('videos');
     this.route('contact');
 });
 
@@ -140,6 +140,36 @@ Application.DiscographyAlbumRoute = Ember.Route.extend(Application.ResetScroll, 
                     '/api/album/' + transition.params['discography.album'].album_id
                 ).done(function (data) {
                     data.cover = data.id.capitalizeFirstLetter() + '_cover';
+
+                    resolve(data);
+                });
+            }
+        );
+    }
+
+});
+
+/**
+ * Videos route.
+ */
+Application.VideosRoute = Ember.Route.extend({
+
+    activate: function ()
+    {
+        resetScroll();
+    },
+
+    model: function ()
+    {
+        return new Ember.RSVP.Promise(
+            function (resolve, reject) {
+                $.getJSON(
+                    '/api/videos'
+                ).done(function (data) {
+                    for (var i = 0, max = data.length; i < max; ++i) {
+                        data[i].description         = data[i].description.replace('\n', '<br />');
+                        data[i].published_for_human = moment(data[i].published).fromNow();
+                    }
 
                     resolve(data);
                 });
