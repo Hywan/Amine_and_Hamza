@@ -167,7 +167,7 @@ Application.VideosRoute = Ember.Route.extend({
                     '/api/videos'
                 ).done(function (data) {
                     for (var i = 0, max = data.length; i < max; ++i) {
-                        data[i].description         = data[i].description.replace('\n', '<br />');
+                        data[i].description         = data[i].description.replace(/\n/g, '<br />');
                         data[i].published_for_human = moment(data[i].published).fromNow();
                     }
 

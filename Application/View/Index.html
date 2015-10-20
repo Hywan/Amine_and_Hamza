@@ -31,43 +31,20 @@
 
   <footer>
     <section>
-      <h2>Contact us</h2>
-
-      <form>
-        <label for="contact_private">Private</label>
-        <input type="radio" id="contact_private" name="contact_type" value="private" />
-
-        <label for="contact_professional">Professional</label>
-        <input type="radio" id="contact_professional" name="contact_type" value="professional" />
-
-        <label for="contact_email">Email:</label>
-        <input type="text" id="contact_email" />
-
-        <label for="contact_name">Name:</label>
-        <input type="text" id="contact_name" name="contact_name" />
-
-        <label for="contact_message">Message:</label>
-        <textarea id="contact_message" name="contact_message"></textarea>
-      </form>
-
-      <h2>Links</h2>
-
-      <h2>Social</h2>
-    </section>
-
-    <section>
       <p>
         <img
           src="/Static/Image/Logo.png"
           alt="Logo of Amine and Hamza"
           class="logo" />
-        © 2015 Amine &amp; Hamza. All right reserved. Designed by Alexandra
-        Romanesco
+        © 2015 Amine &amp; Hamza.
+        All right reserved.
+        Designed by <a href="http://alexandraromanesco.ch/" target="_blank">Alexandra Romanesco</a>.
+        Developed by <a href="http://mnt.io/" target="_blank">Ivan Enderlin</a>.
 
-        <span style="float right">
-          youtube
-          facebook
-          google+
+        <span style="float: right">
+          <a href="https://www.youtube.com/user/amineandhamza" class="button">youtube</a>
+          <a href="https://www.facebook.com/AmineandHamza/" class="button">facebook</a>
+          <a href="https://soundcloud.com/amine-mraihi" class="button">soundcloud</a>
         </span>
       </p>
     </section>
@@ -138,7 +115,7 @@
     </section>
 
     <section>
-      <h2>Last Dates</h2>
+      <h2>Latest dates</h2>
 
       <p class="subtitle-h2">
         Follow us to our amazing tours in this 2015 all around the world
@@ -147,7 +124,7 @@
       <table class="dates">
         <tbody>
           <tr>
-            <td colspan="4" class="date__year">2015</td>
+            <td colspan="3" class="date__year">2015</td>
           </tr>
           <tr>
             <td class="date__date">
@@ -158,7 +135,6 @@
             </td>
             <td class="date__title">Charity concert for Syrian refugees in Jordan</td>
             <td class="date__location">Montreux, Switzerland</td>
-            <td class="date__details"><a class="button">details</a></td>
           </tr>
           <tr>
             <td class="date__date">
@@ -169,7 +145,6 @@
             </td>
             <td class="date__title">Charratmuse</td>
             <td class="date__location">Martigny, Switzerland</td>
-            <td class="date__details"><a class="button">details</a></td>
           </tr>
           <tr>
             <td class="date__date">
@@ -180,7 +155,6 @@
             </td>
             <td class="date__title">Église de Saint-François</td>
             <td class="date__location">Lausanne, Switzerland</td>
-            <td class="date__details"><a class="button">details</a></td>
           </tr>
           <tr>
             <td class="date__date">
@@ -191,7 +165,6 @@
             </td>
             <td class="date__title">Aktionshalle Standzerei</td>
             <td class="date__location">Baden, Switzerland</td>
-            <td class="date__details"><a class="button">details</a></td>
           </tr>
           <tr>
             <td class="date__date">
@@ -202,7 +175,6 @@
             </td>
             <td class="date__title">Festival Delle Tradizioni (feat. Karima Nayt)</td>
             <td class="date__location">Vicenza, Italy</td>
-            <td class="date__details"><a class="button">details</a></td>
           </tr>
           <tr>
             <td class="date__date">
@@ -213,10 +185,12 @@
             </td>
             <td class="date__title">Festival des Musiques Juives (feat. Nathalie El-Baze)</td>
             <td class="date__location">Lausanne, Switzerland</td>
-            <td class="date__details"><a class="button">details</a></td>
           </tr>
         </tbody>
       </table>
+      <div style="text-align: center; margin-top: 2em">
+        {{#link-to 'dates' class="button"}}More dates{{/link-to}}
+      </div>
     </section>
 
     <section style="
@@ -235,51 +209,58 @@
         ">
       <h2 style="margin-top: -1.2em">Live Concert in Geneva</h2>
       <p>
-        The Perpetual Motion album is now available on
-        <a href="">iTunes</a>
-        and
-        <a href="">Google Play</a>
+        {{#link-to 'discography.album' 'perpetual_motion'}}The Perpetual Motion{{/link-to}} album is now available
       </p>
     </section>
 
     <section>
-      <h2>Gallery</h2>
+      <h2>Latest videos</h2>
 
-      <ul role="tablist">
-        <li role="tab" id="gallery_photos" aria-controls="gallery_photos_panel" aria-selected="true">Photos</li>
-        <li role="tab" id="gallery_videos" aria-controls="gallery_videos_panel" aria-selected="false">Videos</li>
-      </ul>
-
-      <div role="tabpanel" id="gallery_photos_panel" aria-labelledby="gallery_photos" aria-hidden="false">
-        <a href="" class="image-link">
-          <img src="/Static/" class="photos" />
+      <div class="video">
+        <a title="Watch “The band beyond borders (Amine &amp; Hamza)- Chikha / شيخة” on Youtube" href="http://www.youtube.com/watch?v=6345ZS4MofE" class="video__link" target="_blank">
+          <img src="https://i3.ytimg.com/vi/6345ZS4MofE/hqdefault.jpg" class="video__poster">
         </a>
-        <a href="" class="image-link">
-          <img src="/Static/" class="photos" />
+        <span class="video__title">The band beyond borders (Amine &amp; Hamza)- Chikha / شيخة</span>
+        <span class="video__published">2 days ago</span>
+        <span class="video__description">Live in St- François 01.11. 2014.<br />
+Composition: Amine &amp; Hamza<br />
+Arrangement: the band beyond borders<br />
+<br />
+Baiju Bhatt, violin<br />
+Blaide Ubaldini, Klarinet<br />
+Fredrik Gille, Percussions<br />
+Amine Mraihi, Oud<br />
+Hamza Mraihi, Kanun and vocal</span>
+      </div>
+      <div class="video">
+        <a title="Watch “The band beyond borders (Amine &amp; Hamza)- Frozen rivers / خرافة” on Youtube" href="http://www.youtube.com/watch?v=b5UPyXnjHzA" class="video__link" target="_blank">
+          <img src="https://i3.ytimg.com/vi/b5UPyXnjHzA/hqdefault.jpg" class="video__poster">
         </a>
-        <a href="" class="image-link">
-          <img src="/Static/" class="photos" />
+        <span class="video__title">The band beyond borders (Amine &amp; Hamza)- Frozen rivers / خرافة</span>
+        <span class="video__published">25 days ago</span>
+        <span class="video__description">Live in St- François 01.11. 2014.<br />
+Composition: Amine &amp; Hamza<br />
+Arrangement: the band beyond borders<br />
+<br />
+Baiju Bhatt, violin<br />
+Blaide Ubaldini, Klarinet<br />
+Fredrik Gille, Percussions<br />
+Amine Mraihi, Oud<br />
+Hamza Mraihi, Kanun and vocal</span>
+      </div>
+      <div class="video">
+        <a title="Watch “My Confessions  Amine and Hamza Sextet Live in Stuttgart” on Youtube" href="http://www.youtube.com/watch?v=Kw3o6P3svcA" class="video__link" target="_blank">
+          <img src="https://i4.ytimg.com/vi/Kw3o6P3svcA/hqdefault.jpg" class="video__poster">
         </a>
-        <a href="" class="image-link">
-          <img src="/Static/" class="photos" />
-        </a>
-        <a href="" class="image-link">
-          <img src="/Static/" class="photos" />
-        </a>
-        <a href="" class="image-link">
-          <img src="/Static/" class="photos" />
-        </a>
-        <a href="" class="image-link">
-          <img src="/Static/" class="photos" />
-        </a>
-        <a href="" class="image-link">
-          <img src="/Static/" class="photos" />
-        </a>
-      </div> 
-
-      <div role="tabpanel" id="gallery_videos_panel" aria-labelledby="gallery_videos" aria-hidden="true">
-        <p>foo videos bar</p>
-      </div> 
+        <span class="video__title">My Confessions  Amine and Hamza Sextet Live in Stuttgart</span>
+        <span class="video__published">2 years ago</span>
+        <span class="video__description">Amine's composition My confessions, Featuring Lukasz Adamczyk Bass, and Miroslaw Hady percussions.<br>
+Live at the Mozart Hall Stuttgart.<br />
+</span>
+      </div>
+      <div style="text-align: center; margin-top: 2em">
+        {{#link-to 'videos' class="button"}}More videos{{/link-to}}
+      </div>
     </section>
   </article>
 </script>
@@ -537,7 +518,7 @@
           {{#each model as |date|}}
             {{#if date.newYear}}
             <tr>
-              <td class="date__year" colspan="4">{{date.date_year}}</td>
+              <td class="date__year" colspan="3">{{date.date_year}}</td>
             </tr>
             {{/if}}
             <tr>
@@ -549,7 +530,9 @@
               </td>
               <td class="date__title">{{date.description}}</td>
               <td class="date__location">{{date.location}}</td>
+              <!--
               <td class="date__details"><a class="button">details</a></td>
+              -->
             </tr>
           {{/each}}
         </tbody>
@@ -652,6 +635,25 @@
       <div style="text-align: center; margin-top: 2em">
         <a href="https://www.youtube.com/user/amineandhamza/videos" target="_blank" class="button">View all videos</a>
       </div>
+    </section>
+  </article>
+</script>
+
+<script type="text/x-handlebars" id="contact">
+  <header>
+    <h1>Contact</h1>
+  </header>
+
+  <article>
+    <section>
+      <p>Sorry, this page is under construction!</p>
+      <p>
+        Hopefully, you can still use emails to contact us 😄:
+        <br style="margin-bottom: 1em" />
+        <a
+          href="mailto:amine@mraihi.com?subject=Hello%20from%20website&amp;body=Hi%2C%20I%20am%20a%20booker%E2%80%A6%0AHi%2C%20I%20am%20a%20%E2%80%A6"
+          class="button">Send an email</a>
+      </p>
     </section>
   </article>
 </script>
