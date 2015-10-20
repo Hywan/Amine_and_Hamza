@@ -43,6 +43,11 @@ $router
         'Album'
     )
     ->get(
+        'videos',
+        '/api/videos',
+        'Videos'
+    )
+    ->get(
         'fallback',
         '/.*',
         'Fallback'
