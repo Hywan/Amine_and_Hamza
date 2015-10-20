@@ -609,9 +609,10 @@
           <time datetime="{{model.releaseYear}}">({{model.releaseYear}})</time>
         </span>
         <br />
-        <a class="album-player__buy button">Buy on Apple iTunes</a>
-        <br />
-        <a class="album-player__buy button">Buy on Google Play</a>
+        {{#each model.resellers as |reseller|}}
+          <a href="{{reseller.url}}" class="album-player__buy button">Buy on {{reseller.name}}</a>
+          <br />
+        {{/each}}
       </div>
 
       <ol class="album-player__tracks">

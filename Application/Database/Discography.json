@@ -40,6 +40,20 @@
                 "title": "Perpetual Motion (feat. Boston String Quartet)",
                 "duration": "8:41"
             }
+        ],
+        "resellers": [
+            {
+                "name": "Apple iTunes",
+                "url": "https://itun.es/fr/-sdEE"
+            },
+            {
+                "name": "Google Play",
+                "url": "https://play.google.com/store/music/artist/Amine_Hamza?id=Ayd63zovw52efatcpk6ijx27gfq"
+            },
+            {
+                "name": "Amazon",
+                "url": "https://www.amazon.com/gp/product/B004MCH0UU"
+            }
         ]
     },
     {
@@ -110,6 +124,20 @@
                 "title": "Ne Pleure Pas",
                 "duration": "8:58"
             }
+        ],
+        "resellers": [
+            {
+                "name": "Apple iTunes",
+                "url": "https://itun.es/fr/RT5kx"
+            },
+            {
+                "name": "Google Play",
+                "url": "https://play.google.com/store/music/album/Amine_M_Raihi_Hamza_M_Raihi_Things_May_Change?id=Bdfcjrdt5rlhes474xvmtvexmky"
+            },
+            {
+                "name": "Amazon",
+                "url": "https://www.amazon.com/gp/product/B00IUMK0U0"
+            }
         ]
     },
     {
@@ -140,6 +168,20 @@
             {
                 "title": "Kitar Al Hayet",
                 "duration": "13:29"
+            }
+        ],
+        "resellers": [
+            {
+                "name": "Apple iTunes",
+                "url": "https://itun.es/fr/S-tex"
+            },
+            {
+                "name": "Google Play",
+                "url": "https://play.google.com/store/music/album/Amine_M_Raihi_Hamza_M_Raihi_Asfar?id=Btavw64nfhvwjjzt54ulkcblxly"
+            },
+            {
+                "name": "Amazon",
+                "url": "https://www.amazon.com/gp/product/B003ZATKRQ"
             }
         ]
     },
@@ -179,6 +221,20 @@
             {
                 "title": "Ila Hounak",
                 "duration": "7:27"
+            }
+        ],
+        "resellers": [
+            {
+                "name": "Apple iTunes",
+                "url": "https://itun.es/fr/y9Xkx"
+            },
+            {
+                "name": "Google Play",
+                "url": "https://play.google.com/store/music/album/Amine_M_Raihi_Hamza_M_Raihi_Ila_Hounak?id=B62qyslsxtaly2wizlx43pik3ey"
+            },
+            {
+                "name": "Amazon",
+                "url": "https://www.amazon.com/gp/product/B00028VK40"
             }
         ]
     }

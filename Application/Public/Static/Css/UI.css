@@ -122,6 +122,7 @@ table.dates {
     font-weight: bold;
     max-width: 1000px;
     margin: 0 auto;
+    border-collapse: collapse;
 }
 
     table.dates tr {
@@ -130,6 +131,12 @@ table.dates {
 
     table.dates td {
         border-bottom: 1px rgb(59, 59, 59) solid;
+        transition: border-color .5s ease;
+    }
+
+    table.dates tr:hover td,
+    table.dates tr:focus td {
+        border-color: rgb(224, 167, 54);
     }
 
     table.dates td:not(:last-child) {
