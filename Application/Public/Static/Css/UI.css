@@ -24,22 +24,41 @@ body {
 
 nav {
     line-height: 3em;
-    max-height: 3em;
     position: absolute;
     top: 0;
-    left: 50%;
-    width: 1100px;
-    margin-left: -550px;
+    width: 100%;
     text-align: center;
     z-index: 1;
+    background: rgb(37, 37, 37);
 }
 
+    nav ul {
+        display: table;
+        border-collapse: collapse;
+        margin: 0 auto;
+        table-layout: fixed;
+    }
+
+    nav li {
+        display: table-cell;
+        vertical-align: text-top;
+        width: 140px;
+    }
+
     nav img {
-        position: absolute;
-        top: .6em;
-        left: 50%;
-        margin-left: -67px;
         width: 134px;
+    }
+
+    @media all and (max-width: 500px) {
+        nav {
+            -background: rgb(37, 37, 37);
+        }
+
+        nav ul,
+        nav li {
+            display: block;
+            width: 100%;
+        }
     }
 
 h1, h2, h3 {
@@ -57,7 +76,7 @@ header, section {
 header {
     color: rgb(255, 255, 255);
     text-align: center;
-    margin-top: 3em;
+    margin-top: 4.5em;
 
 }
     header h1 {
@@ -69,7 +88,9 @@ header {
     }
 
 section {
-    padding: 3em 4em;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3em 10%;
 }
 
     section:nth-of-type(2n+1) {
@@ -78,8 +99,14 @@ section {
 
     section h2 {
         font-size: 220%;
-        line-height: 2.5em;
+        line-height: 1.2em;
         text-align: center;
+        margin-bottom: 1em;
+    }
+
+    section p {
+        text-align: justify;
+        hyphens: auto;
     }
 
     section .subtitle-h2 {
@@ -90,13 +117,6 @@ section {
 footer {
     font-size: 70%;
 }
-
-    footer h2 {
-        font-size: 140%;
-        font-variant: all-small-caps;
-        font-weight: bold;
-        text-align: inherit;
-    }
 
     footer .logo {
         height: 4em;
@@ -117,6 +137,10 @@ p + p {
     margin-top: .8em;
 }
 
+iframe {
+    max-width: 100%;
+}
+
 table.dates {
     color: rgb(254, 254, 254);
     font-weight: bold;
@@ -126,17 +150,12 @@ table.dates {
 }
 
     table.dates tr {
-        line-height: 3.5em
+        min-height: 3.5em;
     }
 
     table.dates td {
-        border-bottom: 1px rgb(59, 59, 59) solid;
-        transition: border-color .5s ease;
-    }
-
-    table.dates tr:hover td,
-    table.dates tr:focus td {
-        border-color: rgb(224, 167, 54);
+        padding-top: .2em;
+        padding-bottom: .2em;
     }
 
     table.dates td:not(:last-child) {
@@ -145,6 +164,19 @@ table.dates {
 
     table.dates tr:last-child td {
         border-bottom: none;
+    }
+
+    @media all and (max-width: 500px) {
+        table.dates tr {
+            display: block;
+            padding-bottom: 1em;
+        }
+
+        table.dates td {
+            display: block;
+            text-align: center;
+            padding-right: 0 !important;
+        }
     }
 
     .date__year {
@@ -207,7 +239,7 @@ table.dates {
 
 .album {
     display: inline-block;
-    width: 320px;
+    width: 250px;
     margin-bottom: 2em;
 }
 
@@ -218,7 +250,7 @@ table.dates {
     .album__cover {
         display: block;
         max-height: 240px;
-        max-width: 270px;
+        max-width: 250px;
         margin: 0 auto 1em; auto;
     }
 
@@ -258,7 +290,7 @@ table.dates {
     .album-player__tracks {
         float: right;
         list-style-type: none;
-        min-width: 50%;
+        min-width: 45%;
     }
 
     .album-player__track {
@@ -273,6 +305,20 @@ table.dates {
             float: right;
             margin-left: 3em;
        }
+
+    @media all and (max-width: 600px) {
+        .album-player__information {
+            float: none;
+            margin: 0 auto;
+        }
+    }
+
+    @media all and (max-width: 600px) {
+        .album-player__tracks {
+            margin-top: 1em;
+            min-width: 100%;
+        }
+    }
 
 dl.musicians { }
 
@@ -299,11 +345,8 @@ dl.musicians { }
 
 .musician {
     display: inline-block;
+    margin: 0 1em;
 }
-
-    .musician:not(:last-child) {
-        margin-right: 3em;
-    }
 
     .musician__photo {
         display: block;
@@ -381,6 +424,14 @@ dl.musicians { }
         display: block;
         font-size: 70%;
         line-height: 1.5em;
+    }
+
+    @media all and (max-width: 600px) {
+        .video {
+            margin-left: 0;
+            margin-right: 0;
+            width: 250px;
+        }
     }
 
 ul[role="tablist"] {
