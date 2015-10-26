@@ -15,15 +15,34 @@
 <body>
 
 <script type="text/x-handlebars">
-  <nav>
+  <svg
+    width="30"
+    height="30"
+    viewBox="0 0 100 100"
+    {{action 'toggleMenu'}}
+    aria-controls="menu">
+    <style>
+      line {
+        stroke: #fff;
+        stroke-width: 10;
+        stroke-linecap: round;
+      }
+    </style>
+
+    <line x1="10" y1="20" x2="90" y2="20" />
+    <line x1="10" y1="50" x2="90" y2="50" />
+    <line x1="10" y1="80" x2="90" y2="80" />
+  </svg>
+
+  <nav id="menu" aria-hidden="true">
     <ul>
-      <li style="float: left">{{#link-to 'about' class="button button--light"}}About us{{/link-to}}</li>
-      <li style="float: left">{{#link-to 'band' class="button button--light"}}The band beyond borders{{/link-to}}</li>
-      <li style="float: left">{{#link-to 'dates' class="button button--light"}}Dates{{/link-to}}</li>
-      <li>{{#link-to 'index'}}<img src="/Static/Image/Logo.png" alt="Logo of Amine and Hamza" />{{/link-to}}</li>
-      <li style="float: right">{{#link-to 'contact' class="button button--light"}}Contact{{/link-to}}</li>
-      <li style="float: right">{{#link-to 'videos' class="button button--light"}}Videos{{/link-to}}</li>
-      <li style="float: right">{{#link-to 'discography' class="button button--light"}}Discography{{/link-to}}</li>
+      <li><a {{action 'linkTo' 'about'}} class="button button--light">About us</a></li>
+      <li><a {{action 'linkTo' 'band'}} class="button button--light">The band</a></li>
+      <li><a {{action 'linkTo' 'dates'}} class="button button--light">Dates</a></li>
+      <li><a {{action 'linkTo' 'index'}}><img src="/Static/Image/Logo.png" alt="Logo of Amine and Hamza" /></a></li>
+      <li><a {{action 'linkTo' 'contact'}} class="button button--light">Contact</a></li>
+      <li><a {{action 'linkTo' 'videos'}} class="button button--light">Videos</a></li>
+      <li><a {{action 'linkTo' 'discography'}} class="button button--light">Discography</a></li>
     </ul>
   </nav>
 

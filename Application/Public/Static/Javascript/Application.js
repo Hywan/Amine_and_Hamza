@@ -22,6 +22,30 @@ Application.Router.map(function () {
     this.route('contact');
 });
 
+Application.ApplicationRoute = Ember.Route.extend({
+
+    actions: {
+        toggleMenu: function ()
+        {
+            var menu = $('#menu');
+
+            if ('true' === menu.attr('aria-hidden')) {
+                menu.attr('aria-hidden', 'false');
+            } else {
+                menu.attr('aria-hidden', 'true');
+            }
+        },
+
+        linkTo: function (ruleId)
+        {
+            console.log(ruleId);
+            this.controllerFor('application').transitionToRoute(ruleId);
+            this.send('toggleMenu');
+        }
+    }
+
+});
+
 /**
  * About route.
  */
