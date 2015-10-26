@@ -19,6 +19,7 @@
 body {
     font: 1.2em/1.5em Text;
     color: rgb(149, 149, 149);
+    overflow-x: hidden;
     background: rgb(37, 37, 37);
 }
 
@@ -42,10 +43,11 @@ body {
     }
 
     #menu img {
+        cursor: pointer;
         width: 134px;
     }
 
-    @media all and (max-width: 500px) {
+    @media all and (max-width: 900px) {
         #menu {
             padding: .5em 0 1em 0;
         }
@@ -81,24 +83,70 @@ header, section {
 header {
     color: rgb(255, 255, 255);
     text-align: center;
-    margin-top: 4.5em;
-
+    margin-top: 11em;
 }
+
     header h1 {
         font-size: 220%;
         font-variant: all-small-caps;
-        line-height: 3em;
+        line-height: 1.5em;
         text-align: center;
         margin-top: 5em;
     }
 
-    @media all and (max-width: 500px) {
+    header img {
+        max-width: 100%;
+    }
+
+    @media all and (max-width: 900px) {
         header {
             margin-top: 1em;
         }
 
         header h1 {
-            margin-top: 0;
+            margin-top: 1em;
+        }
+    }
+
+    .header__poster {
+        min-height: 40em;
+        min-height: 40vh;
+    }
+
+    .header__first-line {
+        display: block;
+        position: absolute;
+        top: 7em;
+        top: 10vh;
+        width: 100%;
+        font-size: 250%;
+        font-size: 7vh;
+    }
+
+    .header__second-line {
+        display: block;
+        position: absolute;
+        top: 9.5em;
+        top: 20vh;
+        left: 0;
+        width: 100%;
+        font-size: 220%;
+        font-size: 5vh;
+    }
+
+    @media all and (orientation:landscape) {
+        .header__poster {
+            min-height: 80vh;
+        }
+
+        .header__first-line {
+            top: 12vh;
+            font-size: 12vh;
+        }
+
+        .header__second-line {
+            top: 30vh;
+            font-size: 8vh;
         }
     }
 

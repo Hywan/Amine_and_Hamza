@@ -20,6 +20,18 @@ nav {
        display: inline-block;
     }
 
+    @media all and (min-width: 901px) {
+        nav {
+            position: absolute;
+            display: table !important;
+        }
+
+        [aria-controls="menu"] {
+            display: none !important;
+        }
+    }
+
+
 [aria-hidden="true"] {
      display: none;
 }
