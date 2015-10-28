@@ -423,9 +423,15 @@ dl.musicians { }
         font-weight: bold;
     }
 
-    .musician__instrument {
+    .musician__instrument,
+    .musician__website {
+        display: inline;
         font-size: 70%;
         margin-bottom: .8em;
+    }
+
+    .musician__instrument {
+        margin-right: 1em;
     }
 
 .videos {
