@@ -45,6 +45,7 @@ body {
     #menu img {
         cursor: pointer;
         width: 134px;
+        margin-bottom: -.6em;
     }
 
     @media all and (max-width: 900px) {
