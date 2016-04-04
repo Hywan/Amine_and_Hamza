@@ -1,5 +1,40 @@
 [
     {
+        "date"       : "2016-11-24",
+        "description": "Jazz onze+",
+        "location"   : "Lausanne, Switzerland"
+    },
+    {
+        "date"       : "2016-07-28",
+        "description": "International festival of Jerach",
+        "location"   : "Jerach, Jordan"
+    },
+    {
+        "date"       : "2016-07-23",
+        "description": "Cosmo Jazz",
+        "location"   : "Chamonix, France"
+    },
+    {
+        "date"       : "2016-07-15",
+        "description": "Montreux Jazz Festival, guest of François Lindemann",
+        "location"   : "Montreux, Switzerland"
+    },
+    {
+        "date"       : "2016-04-28",
+        "description": "Concert à l'université de Lausanne",
+        "location"   : "Lausanne, Switzerland"
+    },
+    {
+        "date"       : "2016-04-17",
+        "description": "Café Robroz, Robras",
+        "location"   : "Zürich, Switzerland"
+    },
+    {
+        "date"       : "2016-04-13",
+        "description": "Jazz à Carthage",
+        "location"   : "Carthage, Tunisia"
+    },
+    {
         "date"       : "2015-11-14",
         "description": "Charity concert for Syrian refugees in Jordan",
         "location"   : "Montreux, Switzerland"
