@@ -4,12 +4,12 @@ require_once
     dirname(__DIR__) . DIRECTORY_SEPARATOR .
     'Bootstrap.php';
 
-use Hoa\Core;
+use Hoa\Exception;
 use Hoa\Dispatcher;
 use Hoa\Router;
 
-Core::enableErrorHandler();
-Core::enableExceptionHandler();
+Exception\Error::enableErrorHandler();
+Exception\Idle::enableUncaughtHandler();
 
 $dispatcher = new Dispatcher\ClassMethod([
     'synchronous.call'  => 'Application\Resource\(:call:U:)',

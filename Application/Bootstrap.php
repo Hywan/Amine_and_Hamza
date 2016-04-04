@@ -5,4 +5,4 @@ require_once
     'vendor' . DIRECTORY_SEPARATOR .
     'autoload.php';
 
-Hoa\Core::getInstance()->setProtocol('hoa://Application', __DIR__ . DS);
+Hoa\Protocol::getInstance()['Application']->setReach(__DIR__ . DS);
