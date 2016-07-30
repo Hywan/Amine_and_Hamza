@@ -5,9 +5,19 @@
         "location"   : "Lausanne, Switzerland"
     },
     {
+        "date"       : "2016-09-24",
+        "description": "Studio recording for the upcoming album",
+        "location"   : "Katowice, Poland"
+    },
+    {
         "date"       : "2016-09-22",
         "description": "Médiathèque de Sion",
         "location"   : "Sion, Switzerland"
+    },
+    {
+        "date"       : "2016-09-16",
+        "description": "Concert with Baiju Bhatt, Red Son Project",
+        "location"   : "BCV Hall, Lausanne, Switzerland"
     },
     {
         "date"       : "2016-08-18",
