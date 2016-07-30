@@ -1,5 +1,20 @@
 [
     {
+        "date"       : "2016-11-15",
+        "description": "Jazz 11+ Festival",
+        "location"   : "Lausanne, Switzerland"
+    },
+    {
+        "date"       : "2016-09-22",
+        "description": "Médiathèque de Sion",
+        "location"   : "Sion, Switzerland"
+    },
+    {
+        "date"       : "2016-08-18",
+        "description": "Les Aubes Musicales",
+        "location"   : "Genève, Switzerland"
+    },
+    {
         "date"       : "2016-07-28",
         "description": "International festival of Jerach",
         "location"   : "Jerach, Jordan"
