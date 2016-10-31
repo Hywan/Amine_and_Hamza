@@ -29,7 +29,7 @@ $router
     // Public rules.
     ->get(
         'dates',
-        '/api/dates',
+        '/api/dates(?:/(?<limit>\d+))?',
         'Dates'
     )
     ->get(
