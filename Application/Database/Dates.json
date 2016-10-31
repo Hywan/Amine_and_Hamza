@@ -1,5 +1,10 @@
 [
     {
+        "date"       : "2016-11-18",
+        "description": "Visa for Music",
+        "location"   : "Rabat, Morocco"
+    },
+    {
         "date"       : "2016-11-05",
         "description": "Jazz 11+ Festival",
         "location"   : "Lausanne, Switzerland"
