@@ -138,59 +138,23 @@
 
       <table class="dates">
         <tbody>
-          <tr>
-            <td colspan="3" class="date__year">2016</td>
-          </tr>
-          <tr>
-            <td class="date__date">
-              <time datetime="2016-07-28">
-                <span class="date__date_day">28</span>
-                <span class="date__date_month">Jul</span>
-              </time>
-            </td>
-            <td class="date__title">International festival of Jerach</td>
-            <td class="date__location">Jerach, Jordan</td>
-          </tr>
-          <tr>
-            <td class="date__date">
-              <time datetime="2016-07-23">
-                <span class="date__date_day">23</span>
-                <span class="date__date_month">Jul</span>
-              </time>
-            </td>
-            <td class="date__title">Cosmo Jazz</td>
-            <td class="date__location">Chamonix, France</td>
-          </tr>
-          <tr>
-            <td class="date__date">
-              <time datetime="2016-07-15">
-                <span class="date__date_day">15</span>
-                <span class="date__date_month">Jul</span>
-              </time>
-            </td>
-            <td class="date__title">Montreux Jazz Festival, guest of François Lindemann</td>
-            <td class="date__location">Montreux, Switzerland</td>
-          </tr>
-          <tr>
-            <td class="date__date">
-              <time datetime="2016-04-28">
-                <span class="date__date_day">28</span>
-                <span class="date__date_month">Apr</span>
-              </time>
-            </td>
-            <td class="date__title">Concert à l'université de Lausanne</td>
-            <td class="date__location">Lausanne, Switzerland</td>
-          </tr>
-          <tr>
-            <td class="date__date">
-              <time datetime="2016-04-17">
-                <span class="date__date_day">17</span>
-                <span class="date__date_month">Apr</span>
-              </time>
-            </td>
-            <td class="date__title">Café Robroz, Robras</td>
-            <td class="date__location">Zürich, Switzerland</td>
-          </tr>
+          {{#each model as |date|}}
+            {{#if date.newYear}}
+            <tr>
+              <td class="date__year" colspan="3">{{date.date_year}}</td>
+            </tr>
+            {{/if}}
+            <tr>
+              <td class="date__date">
+                <time datetime="{{date.date}}">
+                  <span class="date__date_day">{{date.date_day}}</span>
+                  <span class="date__date_month">{{date.date_month}}</span>
+                </time>
+              </td>
+              <td class="date__title">{{date.description}}</td>
+              <td class="date__location">{{date.location}}</td>
+            </tr>
+          {{/each}}
         </tbody>
       </table>
       <div style="text-align: center; margin-top: 2em">
@@ -520,9 +484,6 @@ Live at the Mozart Hall Stuttgart.<br />
               </td>
               <td class="date__title">{{date.description}}</td>
               <td class="date__location">{{date.location}}</td>
-              <!--
-              <td class="date__details"><a class="button">details</a></td>
-              -->
             </tr>
           {{/each}}
         </tbody>
