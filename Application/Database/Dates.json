@@ -1,5 +1,45 @@
 [
     {
+        "date"       : "2017-04-29",
+        "description": "Kutlurpunkt",
+        "location"   : "Flawil, Switzerland"
+    },
+    {
+        "date"       : "2017-04-15",
+        "description": "Journées Musicales de Carthage",
+        "location"   : "Carthage, Tunisia"
+    },
+    {
+        "date"       : "2017-04-06",
+        "description": "Studio de l'Ermitage, guest Vincent Segal",
+        "location"   : "Paris, Switzerland"
+    },
+    {
+        "date"       : "2017-04-04",
+        "description": "Cully Jazz Festival, guest Vincent Peirani",
+        "location"   : "Cully, Switzerland"
+    },
+    {
+        "date"       : "2017-03-31",
+        "description": "Rich Mix",
+        "location"   : "London, United Kingdom"
+    },
+    {
+        "date"       : "2017-03-25",
+        "description": "La Ferme-Asile",
+        "location"   : "Sion, Switzerland"
+    },
+    {
+        "date"       : "2017-03-24",
+        "description": "La Spirale",
+        "location"   : "Friburg, Switzerland"
+    },
+    {
+        "date"       : "2017-02-25",
+        "description": "Moods",
+        "location"   : "Zürich, Switzerland"
+    },
+    {
         "date"       : "2016-11-18",
         "description": "Visa for Music",
         "location"   : "Rabat, Morocco"
