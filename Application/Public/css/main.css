@@ -1,0 +1,137 @@
+@font-face {
+    font-family: Text;
+    src: url('../font/Brandon_Light.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Header;
+    src: url('../font/Cottons_Light.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #fff;
+    font: 1.1em/1.4em Text;
+    letter-spacing: 1px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgb(9, 10, 10) url('../image/background.png') 50% 0% repeat;
+}
+
+nav > ul {
+    font-family: Header;
+    font-size: 1.4rem;
+    list-style-type: none;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+    nav > ul > li {
+        display: inline-block;
+        margin: 0 1rem;
+    }
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+    a:hover, a:focus, a:active {
+        color: rgb(166, 136, 92);
+        text-decoration: underline;
+    }
+
+header, section {
+    background: transparent 50% 0 no-repeat;
+    background-size: cover;
+}
+
+header {
+    height: 100vh;
+    background-image: url('../image/header.png');
+}
+
+    header > h1 {
+        visibility: hidden;
+    }
+
+section {
+    height: 100vh;
+    min-height: 400px;
+    max-height: 900px;
+    padding: 2rem 6rem;
+}
+
+.about_us {
+    background-image: url('../image/about_us_background.png');
+}
+
+.band {
+    background-image: url('../image/band_background.png');
+}
+
+.tours {
+    background-image: url('../image/tours_background.png');
+}
+
+.videos {
+    background-image: url('../image/videos_background.png');
+}
+
+.discography {
+    background-image: url('../image/discography_background.png');
+}
+
+h1, h2, h3, h4 {
+    font-family: Header;
+}
+
+h1 {
+    position: relative;
+    color: rgb(166, 136, 92);
+    font-size: 4rem;
+    line-height: 5rem;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -.5em;
+    width: 1em;
+    border: currentColor solid;
+    border-width: 0 0 .07em 0;
+}
+
+p {
+    text-align: justify;
+}
+
+    p + p {
+        margin-top: 1rem;
+    }
+
+.w-2\/3 {
+    width: 66%;
+}
+
+.align-left {
+    margin-left: auto;
+}
