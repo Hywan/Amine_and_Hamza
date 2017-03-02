@@ -76,6 +76,15 @@ section {
     padding: 2rem 6rem;
 }
 
+    @media all and (max-width: 600px) {
+        section {
+            height: auto;
+            max-height: none;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    }
+
 .about_us {
     background-image: url('../image/about_us_background.png');
 }
@@ -128,9 +137,66 @@ p {
         margin-top: 1rem;
     }
 
+table {
+    width: 100%;
+}
+
+.dates {
+    font-family: Header;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+    .dates tr {
+        position: relative;
+    }
+
+    .dates tr::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: calc(1.5rem - .5px);
+        width: 100%;
+        border: 1px rgba(255, 255, 255, .5) solid;
+    }
+
+    .dates td {
+        padding-bottom: 3rem;
+    }
+
+    .dates td:first-child {
+        padding-left: 1rem;
+    }
+
+    .dates td:last-child {
+        padding-right: 1rem;
+        text-align: right;
+    }
+
+    .dates td:nth-child(1),
+    .dates td:nth-child(3) {
+        color: rgb(249, 132, 49);
+    }
+    .dates thead {
+        display: none;
+    }
+
+.button {
+    color: #000;
+    letter-spacing: 0;
+    padding: .2rem .5rem;
+    background-color: rgb(249, 132, 49);
+}
+
 .w-2\/3 {
     width: 66%;
 }
+
+    @media all and (max-width: 600px) {
+        .w-2\/3 {
+            width: 100%;
+        }
+    }
 
 .align-left {
     margin-left: auto;
