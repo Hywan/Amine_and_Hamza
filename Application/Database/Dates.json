@@ -10,6 +10,16 @@
         "location"   : "Carthage, Tunisia"
     },
     {
+        "date"       : "2017-04-09",
+        "description": "Panic Jazz Club",
+        "location"   : "Marostica, Italy"
+    },
+    {
+        "date"       : "2017-04-07",
+        "description": "Magnétique, Espace 2",
+        "location"   : "Lausanne, Switzerland"
+    },
+    {
         "date"       : "2017-04-06",
         "description": "Studio de l'Ermitage, guest Vincent Segal",
         "location"   : "Paris, Switzerland"
@@ -20,11 +30,6 @@
         "location"   : "Cully, Switzerland"
     },
     {
-        "date"       : "2017-03-31",
-        "description": "Rich Mix",
-        "location"   : "London, United Kingdom"
-    },
-    {
         "date"       : "2017-03-25",
         "description": "La Ferme-Asile",
         "location"   : "Sion, Switzerland"
@@ -33,6 +38,11 @@
         "date"       : "2017-03-24",
         "description": "La Spirale",
         "location"   : "Friburg, Switzerland"
+    },
+    {
+        "date"       : "2017-03-20",
+        "description": "Radio Paradiso, La 1ère",
+        "location"   : "Lausanne, Switzerland"
     },
     {
         "date"       : "2017-02-25",
