@@ -29,7 +29,7 @@ body {
     letter-spacing: 1px;
     max-width: 1200px;
     margin: 0 auto;
-    background: rgb(9, 10, 10) url('../image/background.png') 50% 0% repeat;
+    background: rgb(9, 10, 10) url('../image/background.png') 0% 0% repeat;
 }
 
 nav {
