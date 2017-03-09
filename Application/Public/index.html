@@ -13,6 +13,13 @@
   <link type="text/css" href="css/main.css" rel="stylesheet" />
 </head>
 <body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="width:0; height:0; visibility:hidden; position:absolute">
+    <symbol id="play" viewBox="0 0 28 28">
+      <title>play</title>
+      <path d="M 6,4 L 24,14 L 6,24 Z" />
+    </symbol>
+  </svg>
+
   <nav>
     <ul>
       <li><a href="#top">Home</a></li>
@@ -140,18 +147,27 @@
 
     <div class="album">
       <div class="album__cover">
+        <img src="https://placehold.it/250x250" role="presentation" />
       </div>
 
       <ul class="album__tracks">
-        <li class="album__track">Spleen</li>
-        <li class="album__track">Love Is An Eternal Journey</li>
-        <li class="album__track">Brahim's Dream</li>
-        <li class="album__track">Lullaby For Leo</li>
-        <li class="album__track">The Quest</li>
-        <li class="album__track">Café Tunis</li>
-        <li class="album__track">Letter to God</li>
-        <li class="album__track">Frozen Rivers</li>
+        <li class="album__track"><svg class="ico" role="button"><use xlink:href="#play" /></svg> Spleen</li>
+        <li class="album__track"><svg class="ico" role="button"><use xlink:href="#play" /></svg> Love Is An Eternal Journey</li>
+        <li class="album__track"><svg class="ico" role="button"><use xlink:href="#play" /></svg> Brahim's Dream</li>
+        <li class="album__track"><svg class="ico" role="button"><use xlink:href="#play" /></svg> Lullaby For Leo</li>
+        <li class="album__track"><svg class="ico" role="button"><use xlink:href="#play" /></svg> The Quest</li>
+        <li class="album__track"><svg class="ico" role="button"><use xlink:href="#play" /></svg> Café Tunis</li>
+        <li class="album__track"><svg class="ico" role="button"><use xlink:href="#play" /></svg> Letter to God</li>
+        <li class="album__track"><svg class="ico" role="button"><use xlink:href="#play" /></svg> Frozen Rivers</li>
       </ul>
+
+      <ul class="album__stores">
+        <li class="album__store"><a href=""><img src="https://placehold.it/200x50" role="iTunes" /></a></li>
+        <li class="album__store"><a href=""><img src="https://placehold.it/200x50" role="Google Play" /></a></li>
+        <li class="album__store"><a href=""><img src="https://placehold.it/200x50" role="Amazon" /></a></li>
+      </ul>
+
+      <button class="album__more button">More album</button>
     </div>
   </section>
 

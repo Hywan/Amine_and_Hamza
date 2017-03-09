@@ -181,10 +181,18 @@ table {
     }
 
 .button {
-    color: #000;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    color: #fff;
+    font: inherit;
+    font-family: Header;
+    font-size: 1.5rem;
+    text-transform: uppercase;
     letter-spacing: 0;
     padding: .2rem .5rem;
-    background-color: rgb(249, 132, 49);
+    border: 0;
+    background-color: rgb(249, 132, 49, .8);
 }
 
 .w-2\/3 {
@@ -228,6 +236,55 @@ figure {
         height: 100%;
     }
 
+.album {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .album__cover {
+        display: block;
+        flex: 1;
+    }
+
+    .album__tracks {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        list-style: none;
+    }
+
+    .album__stores {
+        display: flex;
+        flex-basis: 100%;
+        list-style: none;
+        margin-top: 2rem;
+        justify-content: center;
+    }
+
+        .album__store {
+            margin: 0 1rem;
+        }
+
+    .album__more {
+        margin-top: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 .align-left {
     margin-left: auto;
+}
+
+.ico {
+    vertical-align: middle;
+    width: 1.2em;
+    height: 1.2em;
+}
+
+svg path {
+    stroke: currentColor;
+    stroke-width: 3;
+    stroke-linejoin: round;
+    fill: none;
 }
