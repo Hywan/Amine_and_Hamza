@@ -33,7 +33,7 @@ body {
 }
 
 nav {
-    height: 8rem;
+    height: 6rem;
 }
 
     nav > ul {
@@ -70,7 +70,7 @@ header, section {
 }
 
 header {
-    height: calc(100vh - 8rem);
+    height: calc(100vh - 6rem);
     background-image: url('../image/header.png');
 }
 
