@@ -32,18 +32,22 @@ body {
     background: rgb(9, 10, 10) url('../image/background.png') 50% 0% repeat;
 }
 
-nav > ul {
-    font-family: Header;
-    font-size: 1.4rem;
-    list-style-type: none;
-    text-align: center;
-    margin: 2rem 0;
+nav {
+    height: 8rem;
 }
 
-    nav > ul > li {
-        display: inline-block;
-        margin: 0 1rem;
+    nav > ul {
+        font-family: Header;
+        font-size: 1.4rem;
+        list-style-type: none;
+        text-align: center;
+        margin: 2rem 0;
     }
+
+        nav > ul > li {
+            display: inline-block;
+            margin: 0 1rem;
+        }
 
 a, .link {
     color: #fff;
@@ -66,12 +70,20 @@ header, section {
 }
 
 header {
-    height: 100vh;
+    height: calc(100vh - 8rem);
     background-image: url('../image/header.png');
 }
 
     header > h1 {
         visibility: hidden;
+    }
+
+    @media all and (orientation: portrait) and (max-aspect-ratio: 820/1000) {
+        header {
+            height: 0;
+            padding-bottom: 100%;
+            width: 100%;
+        }
     }
 
 section {
@@ -80,7 +92,7 @@ section {
     padding: 2rem 6rem;
 }
 
-    @media all and (max-width: 600px) {
+    @media all and (max-width: 850px) {
         section {
             height: auto;
             max-height: none;
@@ -153,6 +165,13 @@ table {
     width: 100%;
 }
 
+    @media all and (max-width: 850px) {
+        table, thead, tbody, th, tr, td {
+            display: block;
+            text-align: center;
+        }
+    }
+
 .dates {
     font-family: Header;
     font-size: 1.5rem;
@@ -189,8 +208,21 @@ table {
     .dates td:nth-child(3) {
         color: rgb(249, 132, 49);
     }
+
     .dates thead {
         display: none;
+    }
+
+    @media all and (max-width: 850px) {
+        .dates td {
+            padding-bottom: 1rem;
+        }
+
+        .dates td:last-child {
+            padding-right: 0;
+            padding-bottom: 3rem;
+            text-align: inherit;
+        }
     }
 
 .button {
@@ -275,6 +307,17 @@ figure {
         margin-right: auto;
     }
 
+    @media all and (max-width: 850px) {
+        .album {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .album__stores {
+            flex-direction: column;
+        }
+    }
+
 .align-left {
     margin-left: auto;
 }
@@ -283,7 +326,7 @@ figure {
     width: 66%;
 }
 
-    @media all and (max-width: 600px) {
+    @media all and (max-width: 850px) {
         .w-2\/3 {
             width: 100%;
         }
