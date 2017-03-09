@@ -45,14 +45,19 @@ nav > ul {
         margin: 0 1rem;
     }
 
-a {
+a, .link {
     color: #fff;
     text-decoration: none;
 }
 
-    a:hover, a:focus, a:active {
+    a:hover, a:focus, a:active,
+    .link:hover, .link:focus, .link:active {
         color: rgb(166, 136, 92);
         text-decoration: underline;
+    }
+
+    .link--image {
+        text-decoration: none !important;
     }
 
 header, section {
@@ -102,6 +107,14 @@ section {
 
 .discography {
     background-image: url('../image/discography_background.png');
+}
+
+footer {
+    margin-bottom: 5rem;
+}
+
+footer p {
+    text-align: center;
 }
 
 h1, h2, h3, h4 {
@@ -195,16 +208,6 @@ table {
     background-color: rgb(249, 132, 49, .8);
 }
 
-.w-2\/3 {
-    width: 66%;
-}
-
-    @media all and (max-width: 600px) {
-        .w-2\/3 {
-            width: 100%;
-        }
-    }
-
 figure {
     margin-left: auto;
     margin-right: auto;
@@ -276,6 +279,21 @@ figure {
     margin-left: auto;
 }
 
+.w-2\/3 {
+    width: 66%;
+}
+
+    @media all and (max-width: 600px) {
+        .w-2\/3 {
+            width: 100%;
+        }
+    }
+
+.mh {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
 .ico {
     vertical-align: middle;
     width: 1.2em;
@@ -287,4 +305,11 @@ svg path {
     stroke-width: 3;
     stroke-linejoin: round;
     fill: none;
+}
+
+svg #facebook path,
+svg #youtube path,
+svg #soundcloud path {
+    stroke: none;
+    fill: currentColor;
 }
