@@ -1,2 +1,2 @@
 index:
-	php index.php > index.html
+	php index.php > public/index.html
