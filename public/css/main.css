@@ -277,7 +277,22 @@ input[type="text"],
 input[type="email"] {
     font-family: Text;
     text-transform: none;
+}
+
+form {
+    margin: 0 auto;
     width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+form > * {
+    margin-top: .3rem;
+    flex: 1;
+}
+
+form > *:last-child {
+    margin-top: 2rem;
 }
 
 figure {
