@@ -95,6 +95,7 @@ header {
     }
 
 section {
+    position: relative;
     min-height: 100vh;
     max-height: 900px;
     padding: 2rem 6rem;
@@ -167,6 +168,19 @@ p {
 
     p + p {
         margin-top: 1rem;
+    }
+
+.band > ul {
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    left: 0;
+    text-align: center;
+}
+
+    .band > ul > li {
+        display: inline-block;
+        margin: 1em;
     }
 
 table {
@@ -262,6 +276,10 @@ figure {
         text-align: center;
         margin-top: 2rem;
     }
+
+iframe {
+    border: 0;
+}
 
 .video {
     position: relative;
