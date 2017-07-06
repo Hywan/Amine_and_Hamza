@@ -235,6 +235,15 @@ table {
         display: none;
     }
 
+    .dates tbody {
+        overflow: scroll;
+        display: block;
+        height: 60vh;
+        min-height: 100px;
+        -webkit-mask: -webkit-linear-gradient(-90deg, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, .2));
+        mask: linear-gradient(180deg, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, .2));
+    }
+
     @media all and (max-width: 850px) {
         .dates td {
             padding-bottom: 1rem;
