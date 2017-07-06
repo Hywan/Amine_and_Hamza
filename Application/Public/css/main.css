@@ -110,6 +110,10 @@ section {
         }
     }
 
+    .section__small {
+        min-height: 0;
+    }
+
 .about_us {
     background-image: url('../image/about_us_background.png');
 }
@@ -132,10 +136,6 @@ section {
 
 footer {
     margin-bottom: 5rem;
-}
-
-footer p {
-    text-align: center;
 }
 
 h1, h2, h3, h4 {
@@ -247,6 +247,8 @@ table {
         }
     }
 
+input,
+button,
 .button {
     appearance: none;
     -moz-appearance: none;
@@ -260,6 +262,12 @@ table {
     padding: .2rem .5rem;
     border: 0;
     background-color: rgb(249, 132, 49, .8);
+}
+
+input[type="text"],
+input[type="email"] {
+    font-family: Text;
+    text-transform: none;
 }
 
 figure {
@@ -279,6 +287,11 @@ figure {
 
 iframe {
     border: 0;
+}
+
+.text__center,
+.text__center * {
+    text-align: center;
 }
 
 .video {
@@ -357,6 +370,11 @@ iframe {
             width: 100%;
         }
     }
+
+.mv {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 
 .mh {
     margin-left: 1rem;
