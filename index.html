@@ -33,7 +33,7 @@
 
   <nav>
     <ul>
-      <li><a href="#top">Home</a></li>
+      <li><a href="#home">Home</a></li>
       <li><a href="#about-us">About us</a></li>
       <li><a href="#the-band">The band</a></li>
       <li><a href="#tour-dates">Dates</a></li>
@@ -43,7 +43,7 @@
     </ul>
   </nav>
 
-  <header>
+  <header id="home">
     <h1>Amine &amp; Hamza</h1>
   </header>
 
