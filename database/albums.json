@@ -41,17 +41,17 @@
             {
                 "id": "itunes",
                 "name": "Apple iTunes",
-                "url": ""
+                "url": "https://itunes.apple.com/fr/album/fertile-paradoxes/id1205683171?l=en"
             },
             {
                 "id": "google_play",
                 "name": "Google Play",
-                "url": ""
+                "url": "https://play.google.com/store/music/album/The_Band_Beyond_Borders_Fertile_Paradoxes?id=Bqkqkpq2rtnl5ntidgsgzoeub4i"
             },
             {
                 "id": "amazon",
                 "name": "Amazon",
-                "url": ""
+                "url": "https://www.amazon.fr/Band-Beyong-Borders-Fertile-Paradoxes/dp/B01NAYTPWK"
             }
         ]
     },
@@ -106,7 +106,7 @@
             {
                 "id": "google_play",
                 "name": "Google Play",
-                "url": "https://play.google.com/store/music/artist/Amine_Hamza?id=Ayd63zovw52efatcpk6ijx27gfq"
+                "url": "https://play.google.com/store/music/album/Amine_Hamza_Perpetual_Motion_feat_Boston_String_Qu?id=B2hrdkafcx4lmesvw7m5cbv6sji"
             },
             {
                 "id": "amazon",
