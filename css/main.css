@@ -149,25 +149,25 @@ h1, h2, h3, h4 {
     font-family: Header;
 }
 
-h1 {
-    position: relative;
-    color: rgb(166, 136, 92);
-    font-size: 4rem;
-    line-height: 5rem;
-    text-align: center;
-    margin-bottom: 6rem;
-}
+    h1 {
+        position: relative;
+        color: rgb(166, 136, 92);
+        font-size: 4rem;
+        line-height: 5rem;
+        text-align: center;
+        margin-bottom: 6rem;
+    }
 
-h1::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    margin-left: -.5em;
-    width: 1em;
-    border: currentColor solid;
-    border-width: 0 0 .07em 0;
-}
+    h1::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -.5em;
+        width: 1em;
+        border: currentColor solid;
+        border-width: 0 0 .07em 0;
+    }
 
 p {
     text-align: justify;
@@ -321,6 +321,11 @@ iframe {
     border: 0;
 }
 
+section:target, h1:target, h2:target, h3:target, h4:target {
+    margin-top: -8rem;
+    padding-top: 8rem;
+}
+
 .text__center,
 .text__center * {
     text-align: center;
@@ -342,19 +347,47 @@ iframe {
         height: 100%;
     }
 
-.album {
-    display: flex;
-    flex-wrap: wrap;
+.albums {
+    width: 100%;
+    overflow: auto;
+    white-space: nowrap;
+    -webkit-scroll-snap-points-x: repeat(100%);
+    -webkit-scroll-snap-type: mandatory;
+    -ms-scroll-snap-points-x: repeat(100%);
+    -ms-scroll-snap-type: mandatory;
+    scroll-snap-points-x: repeat(100%);
+    scroll-snap-type: mandatory;
 }
 
+    .albums > .album-panel {
+        width: 100%;
+        display: inline-block;
+    }
+
+.album {
+    display: flex;
+    flex-direction: column;
+}
+
+    .album__details {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .album__title {
+        margin-bottom: 2rem;
+    }
+
     .album__cover {
-        display: block;
         flex: 1;
+        display: flex;
+        justify-content: center;
+        align-self: center;
     }
 
     .album__tracks {
+        flex: 2;
         display: flex;
-        flex: 1;
         flex-direction: column;
         justify-content: center;
         list-style: none;
@@ -362,7 +395,6 @@ iframe {
 
     .album__stores {
         display: flex;
-        flex-basis: 100%;
         list-style: none;
         margin-top: 2rem;
         justify-content: center;
@@ -372,14 +404,8 @@ iframe {
             margin: 0 1rem;
         }
 
-    .album__more {
-        margin-top: 1rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
     @media all and (max-width: 850px) {
-        .album {
+        .album, .album__details {
             flex-direction: column;
             align-items: center;
         }
