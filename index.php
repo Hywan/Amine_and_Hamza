@@ -143,7 +143,7 @@
 
             <div class="album__details">
               <div class="album__cover">
-                <img src="https://placehold.it/250x250" role="presentation" />
+                <img src="image/album/<?php echo $album->id ?>_frontcover.jpg" role="presentation" />
               </div>
 
               <ul class="album__tracks">
