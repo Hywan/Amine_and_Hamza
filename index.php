@@ -136,61 +136,31 @@
 
   <section id="discography" class="discography">
     <div class="albums">
-      <div class="album-panel">
-        <div class="album">
-          <h1 class="album__title">Fertile Paradoxes</h1>
+        <?php foreach (json_decode(file_get_contents('database/albums.json')) as $album): ?>
+        <div class="album-panel">
+          <div class="album">
+            <h1 class="album__title"><?php echo $album->title ?></h1>
 
-          <div class="album__details">
-            <div class="album__cover">
-              <img src="https://placehold.it/250x250" role="presentation" />
+            <div class="album__details">
+              <div class="album__cover">
+                <img src="https://placehold.it/250x250" role="presentation" />
+              </div>
+
+              <ul class="album__tracks">
+                <?php foreach ($album->tracks as $track): ?>
+                <li class="album__track"><svg class="ico" role="button"><use xlink:href="#play" /></svg> <?php echo $track->title ?></li>
+                <?php endforeach ?>
+              </ul>
             </div>
 
-            <ul class="album__tracks">
-              <li class="album__track"><svg class="ico" role="button"><use xlink:href="#play" /></svg> Spleen</li>
-              <li class="album__track"><svg class="ico" role="button"><use xlink:href="#play" /></svg> Love Is An Eternal Journey</li>
-              <li class="album__track"><svg class="ico" role="button"><use xlink:href="#play" /></svg> Brahim's Dream</li>
-              <li class="album__track"><svg class="ico" role="button"><use xlink:href="#play" /></svg> Lullaby For Leo</li>
-              <li class="album__track"><svg class="ico" role="button"><use xlink:href="#play" /></svg> The Quest</li>
-              <li class="album__track"><svg class="ico" role="button"><use xlink:href="#play" /></svg> Café Tunis</li>
-              <li class="album__track"><svg class="ico" role="button"><use xlink:href="#play" /></svg> Letter to God</li>
-              <li class="album__track"><svg class="ico" role="button"><use xlink:href="#play" /></svg> Frozen Rivers</li>
+            <ul class="album__stores">
+              <?php foreach ($album->resellers as $reseller): ?>
+              <li class="album__store"><a href="<?php echo $reseller->url ?>"><img src="image/store_<?php echo $reseller->id ?>.png" role="<?php echo $reseller->name ?>" /></a></li>
+              <?php endforeach ?>
             </ul>
           </div>
-
-          <ul class="album__stores">
-            <li class="album__store"><a href=""><img src="image/store_itunes.png" role="iTunes" /></a></li>
-            <li class="album__store"><a href=""><img src="image/store_google_play.png" role="Google Play" /></a></li>
-            <li class="album__store"><a href=""><img src="image/store_amazon.png" role="Amazon" /></a></li>
-          </ul>
         </div>
-      </div>
-      <div class="album-panel">
-        <div class="album">
-          <h1 class="album__title">Fertile Paradoxes</h1>
-
-          <div class="album__details">
-            <div class="album__cover">
-              <img src="https://placehold.it/250x250" role="presentation" />
-            </div>
-
-            <ul class="album__tracks">
-              <li class="album__track"><svg class="ico" role="button"><use xlink:href="#play" /></svg> Spleen</li>
-              <li class="album__track"><svg class="ico" role="button"><use xlink:href="#play" /></svg> Love Is An Eternal Journey</li>
-              <li class="album__track"><svg class="ico" role="button"><use xlink:href="#play" /></svg> Brahim's Dream</li>
-              <li class="album__track"><svg class="ico" role="button"><use xlink:href="#play" /></svg> Lullaby For Leo</li>
-              <li class="album__track"><svg class="ico" role="button"><use xlink:href="#play" /></svg> The Quest</li>
-              <li class="album__track"><svg class="ico" role="button"><use xlink:href="#play" /></svg> Café Tunis</li>
-              <li class="album__track"><svg class="ico" role="button"><use xlink:href="#play" /></svg> Letter to God</li>
-              <li class="album__track"><svg class="ico" role="button"><use xlink:href="#play" /></svg> Frozen Rivers</li>
-            </ul>
-          </div>
-
-          <ul class="album__stores">
-            <li class="album__store"><a href=""><img src="image/store_itunes.png" role="iTunes" /></a></li>
-            <li class="album__store"><a href=""><img src="image/store_google_play.png" role="Google Play" /></a></li>
-            <li class="album__store"><a href=""><img src="image/store_amazon.png" role="Amazon" /></a></li>
-          </ul>
-        </div>
+        <?php endforeach ?>
       </div>
     </div>
   </section>
