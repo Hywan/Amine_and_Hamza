@@ -351,6 +351,7 @@ section:target, h1:target, h2:target, h3:target, h4:target {
     width: 100%;
     overflow: auto;
     white-space: nowrap;
+    padding-bottom: 1rem;
     -webkit-scroll-snap-points-x: repeat(100%);
     -webkit-scroll-snap-type: mandatory;
     -ms-scroll-snap-points-x: repeat(100%);
