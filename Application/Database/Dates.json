@@ -1,5 +1,40 @@
 [
     {
+        "date"       : "2018-04-20",
+        "description": "Salle Communale de Renens",
+        "location"   : "Renens, Switzerland"
+    },
+    {
+        "date"       : "2018-02-24",
+        "description": "Kreuz",
+        "location"   : "Nidau, Switzerland"
+    },
+    {
+        "date"       : "2018-02-17",
+        "description": "Chorus, guest Vincent Peirani",
+        "location"   : "Lausanne, Switzerland"
+    },
+    {
+        "date"       : "2018-01-27",
+        "description": "Tropenhaus",
+        "location"   : "Wolhusen, Switzerland"
+    },
+    {
+        "date"       : "2017-10-23",
+        "description": "L'Épicentre",
+        "location"   : "Collonges, Switzerland"
+    },
+    {
+        "date"       : "2017-09-23",
+        "description": "Materadio Festival",
+        "location"   : "Matera, Italy"
+    },
+    {
+        "date"       : "2017-09-22",
+        "description": "Cinéma City Club",
+        "location"   : "Pully, Switzerland"
+    },
+    {
         "date"       : "2017-05-21",
         "description": "Museum of Ethnography",
         "location"   : "Zürich, Switzerland"
