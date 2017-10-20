@@ -1,0 +1,467 @@
+@font-face {
+    font-family: Text;
+    src: url('../font/Brandon_Light.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Header;
+    src: url('../font/Cottons_Light.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #fff;
+    font: 1.1em/1.4em Text;
+    letter-spacing: 1px;
+    max-width: 1200px;
+    margin: 0 auto;
+    scroll-behavior: smooth;
+    background: rgb(9, 10, 10) url('../image/background.png') 0% 0% repeat;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    height: 6rem;
+    background: rgb(9, 10, 10);
+}
+
+    nav > ul {
+        font-family: Header;
+        font-size: 1.4rem;
+        list-style-type: none;
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+        nav > ul > li {
+            display: inline-block;
+            margin: 0 1rem;
+        }
+
+a, .link {
+    color: #fff;
+    text-decoration: none;
+}
+
+    a:hover, a:focus, a:active,
+    .link:hover, .link:focus, .link:active {
+        color: rgb(166, 136, 92);
+        text-decoration: underline;
+    }
+
+    .link--image {
+        text-decoration: none !important;
+    }
+
+header, section {
+    background: transparent 50% 0 no-repeat;
+    background-size: cover;
+}
+
+header {
+    height: calc(100vh - 6rem);
+    background-image: url('../image/header.png');
+}
+
+    header > h1 {
+        visibility: hidden;
+    }
+
+    @media all and (orientation: portrait) and (max-aspect-ratio: 820/1000) {
+        header {
+            height: 0;
+            padding-bottom: 100%;
+            width: 100%;
+        }
+    }
+
+    @media all and (orientation: landscape) {
+        header {
+            height: 0;
+            padding-bottom: 100%;
+            width: 100%;
+        }
+    }
+
+section {
+    position: relative;
+    min-height: 100vh;
+    max-height: 900px;
+    padding: 2rem 6rem;
+}
+
+    @media all and (max-width: 850px) {
+        section {
+            height: auto;
+            max-height: none;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    }
+
+    .section__small {
+        min-height: 0;
+    }
+
+.about_us {
+    background-image: url('../image/about_us_background.png');
+}
+
+.band {
+    background-image: url('../image/band_background.png');
+}
+
+.tours {
+    background-image: url('../image/tours_background.png');
+}
+
+.videos {
+    background-image: url('../image/videos_background.png');
+}
+
+.discography {
+    background-image: url('../image/discography_background.png');
+}
+
+footer {
+    margin-bottom: 5rem;
+}
+
+h1, h2, h3, h4 {
+    font-family: Header;
+}
+
+    h1 {
+        position: relative;
+        color: rgb(166, 136, 92);
+        font-size: 4rem;
+        line-height: 5rem;
+        text-align: center;
+        margin-bottom: 6rem;
+    }
+
+    h1::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -.5em;
+        width: 1em;
+        border: currentColor solid;
+        border-width: 0 0 .07em 0;
+    }
+
+p {
+    text-align: justify;
+}
+
+    p + p {
+        margin-top: 1rem;
+    }
+
+.band > ul {
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    left: 0;
+    text-align: center;
+}
+
+    .band > ul > li {
+        display: inline-block;
+        margin: 1em;
+    }
+
+table {
+    width: 100%;
+}
+
+    @media all and (max-width: 850px) {
+        table, thead, tbody, th, tr, td {
+            display: block;
+            text-align: center;
+        }
+    }
+
+.dates {
+    font-family: Header;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+    .dates tr {
+        position: relative;
+    }
+
+    .dates tr::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: calc(1.5rem - .5px);
+        width: 100%;
+        border: 1px rgba(255, 255, 255, .5) solid;
+    }
+
+    .dates td {
+        padding-bottom: 3rem;
+    }
+
+    .dates td:first-child {
+        padding-left: 1rem;
+    }
+
+    .dates td:last-child {
+        padding-right: 1rem;
+        text-align: right;
+    }
+
+    .dates td:nth-child(1),
+    .dates td:nth-child(3) {
+        color: rgb(249, 132, 49);
+    }
+
+    .dates thead {
+        display: none;
+    }
+
+    .dates tbody {
+        overflow: scroll;
+        display: block;
+        height: 60vh;
+        min-height: 100px;
+        -webkit-mask: -webkit-linear-gradient(-90deg, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, .2));
+        mask: linear-gradient(180deg, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, .2));
+    }
+
+    @media all and (max-width: 850px) {
+        .dates td {
+            padding-bottom: 1rem;
+        }
+
+        .dates td:last-child {
+            padding-right: 0;
+            padding-bottom: 3rem;
+            text-align: inherit;
+        }
+    }
+
+input,
+button,
+.button {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    color: #fff;
+    font: inherit;
+    font-family: Header;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    padding: .2rem .5rem;
+    border: 0;
+    background-color: rgb(249, 132, 49, .8);
+}
+
+input[type="text"],
+input[type="email"] {
+    font-family: Text;
+    text-transform: none;
+}
+
+form {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+form > * {
+    margin-top: .3rem;
+    flex: 1;
+}
+
+form > *:last-child {
+    margin-top: 2rem;
+}
+
+figure {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+}
+
+    figure > *:first-child {
+        box-shadow: 0 0 1.5em rgba(0, 0, 0, .9);
+    }
+
+    figcaption {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+iframe {
+    border: 0;
+}
+
+section:target, h1:target, h2:target, h3:target, h4:target {
+    margin-top: -8rem;
+    padding-top: 8rem;
+}
+
+.text__center,
+.text__center * {
+    text-align: center;
+}
+
+.video {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+    .video iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+.albums {
+    width: 100%;
+    overflow: auto;
+    white-space: nowrap;
+    padding-bottom: 1rem;
+    -webkit-scroll-snap-points-x: repeat(100%);
+    -webkit-scroll-snap-type: mandatory;
+    -ms-scroll-snap-points-x: repeat(100%);
+    -ms-scroll-snap-type: mandatory;
+    scroll-snap-points-x: repeat(100%);
+    scroll-snap-type: mandatory;
+}
+
+    .albums > .album-panel {
+        width: 100%;
+        display: inline-block;
+    }
+
+.album {
+    display: flex;
+    flex-direction: column;
+}
+
+    .album__details {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .album__title {
+        margin-bottom: 2rem;
+    }
+
+    .album__cover {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        padding-right: 2rem;
+    }
+
+    .album__tracks {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style: none;
+    }
+
+    .album__stores {
+        display: flex;
+        list-style: none;
+        margin-top: 2rem;
+        justify-content: center;
+    }
+
+        .album__store {
+            margin: 0 1rem;
+        }
+
+    @media all and (max-width: 850px) {
+        .album, .album__details {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .album__cover {
+            padding-right: 0;
+            padding-bottom: 1rem;
+        }
+
+        .album__stores {
+            flex-direction: column;
+        }
+    }
+
+.align-left {
+    margin-left: auto;
+}
+
+.w-2\/3 {
+    width: 66%;
+}
+
+    @media all and (max-width: 850px) {
+        .w-2\/3 {
+            width: 100%;
+        }
+    }
+
+.mv {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.mh {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.ico {
+    vertical-align: middle;
+    width: 1.2em;
+    height: 1.2em;
+}
+
+svg path {
+    stroke: currentColor;
+    stroke-width: 3;
+    stroke-linejoin: round;
+    fill: none;
+}
+
+svg #facebook path,
+svg #youtube path,
+svg #soundcloud path {
+    stroke: none;
+    fill: currentColor;
+}

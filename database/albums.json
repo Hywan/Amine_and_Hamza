@@ -1,0 +1,311 @@
+[
+    {
+        "id": "fertile_paradoxes",
+        "title": "Fertile Paradoxes",
+        "releaseYear": 2017,
+        "tracks": [
+            {
+                "title": "Spleen",
+                "duration": "0:00"
+            },
+            {
+                "title": "Love Is An Eternal Journey",
+                "duration": "0:00"
+            },
+            {
+                "title": "Brahim's Dream",
+                "duration": "0:00"
+            },
+            {
+                "title": "Lullaby For Leo",
+                "duration": "0:00"
+            },
+            {
+                "title": "The Quest",
+                "duration": "0:00"
+            },
+            {
+                "title": "Café Tunis",
+                "duration": "0:00"
+            },
+            {
+                "title": "Letter to God",
+                "duration": "0:00"
+            },
+            {
+                "title": "Frozen Rivers",
+                "duration": "0:00"
+            }
+        ],
+        "resellers": [
+            {
+                "id": "itunes",
+                "name": "Apple iTunes",
+                "url": "https://itunes.apple.com/fr/album/fertile-paradoxes/id1205683171?l=en"
+            },
+            {
+                "id": "google_play",
+                "name": "Google Play",
+                "url": "https://play.google.com/store/music/album/The_Band_Beyond_Borders_Fertile_Paradoxes?id=Bqkqkpq2rtnl5ntidgsgzoeub4i"
+            },
+            {
+                "id": "amazon",
+                "name": "Amazon",
+                "url": "https://www.amazon.fr/Band-Beyong-Borders-Fertile-Paradoxes/dp/B01NAYTPWK"
+            }
+        ]
+    },
+    {
+        "id": "perpetual_motion",
+        "title": "Perpetual Motion",
+        "releaseYear": 2012,
+        "tracks": [
+            {
+                "title": "Café Tunis (feat. Boston String Quartet)",
+                "duration": "6:46"
+            },
+            {
+                "title": "Ya Nari (feat. Boston String Quartet)",
+                "duration": "6:51"
+            },
+            {
+                "title": "Omar (feat. Boston String Quartet)",
+                "duration": "8:59"
+            },
+            {
+                "title": "Meni Nessi (feat. Boston String Quartet)",
+                "duration": "6:02"
+            },
+            {
+                "title": "All the Things You Are Not (feat. Boston String Quartet)",
+                "duration": "8:17"
+            },
+            {
+                "title": "Vis-à-vis Café Tunis (feat. Boston String Quartet)",
+                "duration": "3:50"
+            },
+            {
+                "title": "My Secret Garden (feat. Boston String Quartet)",
+                "duration": "6:32"
+            },
+            {
+                "title": "The Challenge (feat. Boston String Quartet)",
+                "duration": "8:10"
+            },
+            {
+                "title": "Perpetual Motion (feat. Boston String Quartet)",
+                "duration": "8:41"
+            }
+        ],
+        "resellers": [
+            {
+                "id": "itunes",
+                "name": "Apple iTunes",
+                "url": "https://itun.es/fr/-sdEE"
+            },
+            {
+                "id": "google_play",
+                "name": "Google Play",
+                "url": "https://play.google.com/store/music/album/Amine_Hamza_Perpetual_Motion_feat_Boston_String_Qu?id=B2hrdkafcx4lmesvw7m5cbv6sji"
+            },
+            {
+                "id": "amazon",
+                "name": "Amazon",
+                "url": "https://www.amazon.com/gp/product/B004MCH0UU"
+            }
+        ]
+    },
+    {
+        "id": "meni_nessi",
+        "title": "Meni nessi",
+        "releaseYear": 2007,
+        "tracks": [
+            {
+                "title": "Confused",
+                "duration": "5:33"
+            },
+            {
+                "title": "Wake up",
+                "duration": "6:34"
+            },
+            {
+                "title": "Instrumental",
+                "duration": "8:04"
+            },
+            {
+                "title": "A Little Story",
+                "duration": "2:59"
+            },
+            {
+                "title": "Oh Father",
+                "duration": "7:13"
+            },
+            {
+                "title": "Patience",
+                "duration": "6:28"
+            },
+            {
+                "title": "I won't forget",
+                "duration": "5:24"
+            }
+        ],
+        "resellers": [
+        ]
+    },
+    {
+        "id": "things_may_change",
+        "title": "Things may change",
+        "releaseYear": 2006,
+        "tracks": [
+            {
+                "title": "Pour Lui",
+                "duration": "11:11"
+            },
+            {
+                "title": "Ez-Zahra Town",
+                "duration": "6:58"
+            },
+            {
+                "title": "Pour Elle",
+                "duration": "5:56"
+            },
+            {
+                "title": "Things May Change",
+                "duration": "7:52"
+            },
+            {
+                "title": "Nous",
+                "duration": "7:27"
+            },
+            {
+                "title": "Pour un Sourire",
+                "duration": "7:10"
+            },
+            {
+                "title": "Ne Pleure Pas",
+                "duration": "8:58"
+            }
+        ],
+        "resellers": [
+            {
+                "id": "itunes",
+                "name": "Apple iTunes",
+                "url": "https://itun.es/fr/RT5kx"
+            },
+            {
+                "id": "google_play",
+                "name": "Google Play",
+                "url": "https://play.google.com/store/music/album/Amine_M_Raihi_Hamza_M_Raihi_Things_May_Change?id=Bdfcjrdt5rlhes474xvmtvexmky"
+            },
+            {
+                "id": "amazon",
+                "name": "Amazon",
+                "url": "https://www.amazon.com/gp/product/B00IUMK0U0"
+            }
+        ]
+    },
+    {
+        "id": "asfar",
+        "title": "Asfar",
+        "releaseYear": 2004,
+        "tracks": [
+            {
+                "title": "Khabab",
+                "duration": "5:24"
+            },
+            {
+                "title": "Afirou Ilaika Mink",
+                "duration": "8:32"
+            },
+            {
+                "title": "Ya Rabou",
+                "duration": "14:39"
+            },
+            {
+                "title": "Min Ajli Alamin Afdhal",
+                "duration": "3:46"
+            },
+            {
+                "title": "Ahdi Mouhjati",
+                "duration": "10:30"
+            },
+            {
+                "title": "Kitar Al Hayet",
+                "duration": "13:29"
+            }
+        ],
+        "resellers": [
+            {
+                "id": "itunes",
+                "name": "Apple iTunes",
+                "url": "https://itun.es/fr/S-tex"
+            },
+            {
+                "id": "google_play",
+                "name": "Google Play",
+                "url": "https://play.google.com/store/music/album/Amine_M_Raihi_Hamza_M_Raihi_Asfar?id=Btavw64nfhvwjjzt54ulkcblxly"
+            },
+            {
+                "id": "amazon",
+                "name": "Amazon",
+                "url": "https://www.amazon.com/gp/product/B003ZATKRQ"
+            }
+        ]
+    },
+    {
+        "id": "ila_hounak",
+        "title": "Ila Hounak",
+        "releaseYear": 2004,
+        "tracks": [
+            {
+                "title": "Awatef Khassa Jiden",
+                "duration": "8:34"
+            },
+            {
+                "title": "Hams el Watar",
+                "duration": "3:58"
+            },
+            {
+                "title": "Ishk",
+                "duration": "5:51"
+            },
+            {
+                "title": "Ala Masharef Gharnata",
+                "duration": "7:26"
+            },
+            {
+                "title": "Nassamet Shamalia",
+                "duration": "4:32"
+            },
+            {
+                "title": "Nafha",
+                "duration": "9:14"
+            },
+            {
+                "title": "Mihrab Al Houda",
+                "duration": "9:14"
+            },
+            {
+                "title": "Ila Hounak",
+                "duration": "7:27"
+            }
+        ],
+        "resellers": [
+            {
+                "id": "itunes",
+                "name": "Apple iTunes",
+                "url": "https://itun.es/fr/y9Xkx"
+            },
+            {
+                "id": "google_play",
+                "name": "Google Play",
+                "url": "https://play.google.com/store/music/album/Amine_M_Raihi_Hamza_M_Raihi_Ila_Hounak?id=B62qyslsxtaly2wizlx43pik3ey"
+            },
+            {
+                "id": "amazon",
+                "name": "Amazon",
+                "url": "https://www.amazon.com/gp/product/B00028VK40"
+            }
+        ]
+    }
+]
