@@ -170,13 +170,13 @@
 
     <p>Join our mailing list to receive news and updates!</p>
     <form action="http://aminehamza.us16.list-manage.com/subscribe/post?u=f430f92fb8c5e0adcb6c127cc&amp;id=fd7628e8d9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="mv" target="_blank">
-        <input type="email" value="" name="EMAIL" placeholder="Email address" required>
-        <input type="text" value="" name="FNAME" placeholder="First name">
-        <input type="text" value="" name="LNAME" placeholder="Last name">
-        <div style="position: absolute; left: -5000px;" aria-hidden="true">
-            <input type="text" name="b_f430f92fb8c5e0adcb6c127cc_fd7628e8d9" tabindex="-1" value="" />
-        </div>
-        <input type="submit" value="Join" name="subscribe"></div>
+      <input type="email" value="" name="EMAIL" placeholder="Email address" required>
+      <input type="text" value="" name="FNAME" placeholder="First name">
+      <input type="text" value="" name="LNAME" placeholder="Last name">
+      <div style="position: absolute; left: -5000px;" aria-hidden="true">
+        <input type="text" name="b_f430f92fb8c5e0adcb6c127cc_fd7628e8d9" tabindex="-1" value="" />
+      </div>
+      <input type="submit" value="Join" name="subscribe"></div>
     </form>
   </section>
 
