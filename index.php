@@ -128,7 +128,7 @@
 
     <figure>
       <div class="video">
-        <iframe src="https://www.youtube-nocookie.com/embed/videoseries?list=PLOkMRkzDhWGXj6OQRBGMBsxmvnHcWq96y&amp;controls=0?ecver=2" allowfullscreen></iframe>
+        <iframe src="https://www.youtube-nocookie.com/embed/videoseries?list=PL7CCB1995478ABB10&amp;controls=0?ecver=2" allowfullscreen></iframe>
       </div>
     </figure>
     </div>
