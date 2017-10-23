@@ -7,7 +7,8 @@
 
 @font-face {
     font-family: Header;
-    src: url('../font/Cottons_Light.woff2') format('woff2');
+    src: url('../font/Cottons_Light.woff2') format('woff2'),
+         url('../font/Cottons_Light.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -203,7 +204,7 @@ table {
     }
 
 .dates {
-    font-family: Header;
+    font-family: Header, Avenir;
     font-size: 1.5rem;
     text-transform: uppercase;
 }
