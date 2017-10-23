@@ -148,7 +148,7 @@
 
               <ul class="album__tracks">
                 <?php foreach ($album->tracks as $track): ?>
-                <li class="album__track"><svg class="ico" role="button"><use xlink:href="#play" /></svg> <?php echo $track->title ?></li>
+                <li class="album__track"><span><svg class="ico" role="button"><use xlink:href="#play" /></svg> <?php echo $track->title ?></span></li>
                 <?php endforeach ?>
               </ul>
             </div>
