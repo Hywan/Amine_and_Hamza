@@ -1,5 +1,35 @@
 [
     {
+        "date"       : "2017-12-12",
+        "description": "Chrous club, guest François Lindemann",
+        "location"   : "Lausanne, Switzerland"
+    },
+    {
+        "date"       : "2017-11-04",
+        "description": "Théâtre de Vidy",
+        "location"   : "Lausanne, Switzerland"
+    },
+    {
+        "date"       : "2017-10-21",
+        "description": "Épicentre, Jazz contreband",
+        "location"   : "Geneva, Switzerland"
+    },
+    {
+        "date"       : "2017-09-24",
+        "description": "Église St-François",
+        "location"   : "Lausanne, Switzerland"
+    },
+    {
+        "date"       : "2017-09-23",
+        "description": "Materadio Festival",
+        "location"   : "Matera, Italy"
+    },
+    {
+        "date"       : "2017-09-22",
+        "description": "Cinema City Club",
+        "location"   : "Pully, Switzerland"
+    },
+    {
         "date"       : "2017-07-29",
         "description": "Usbada Jazz Festival",
         "location"   : "St-Petersburg, Russia"
@@ -15,7 +45,7 @@
         "location"   : "Montreux, Switzerland"
     },
     {
-        "date"       : "2017-06-26",
+        "date"       : "2017-07-26",
         "description": "Jetée de la Compagnie",
         "location"   : "Lausanne, Switzerland"
     },
