@@ -77,11 +77,11 @@
         traditions.
       </p>
       <p>
-        Their latest project, No Borders, dives even deeper in modern
-        harmonies, hypnotic grooves and profound feeling, and features
-        french clarinetist Blaise Ubaldini and swiss-indian violinist
-        Baiju Bhatt, as well as polish bassist Lukacz and swedish
-        percussionist Fredrik.
+        Their latest project, The Band Beyond Borders, dives even deeper in
+        modern harmonies, hypnotic grooves and profound feeling, and features
+        french clarinetist Blaise Ubaldini and swiss-indian violinist Baiju
+        Bhatt, as well as polish bassist Lukacz and swedish percussionist
+        Fredrik.
       </p>
     </div>
   </section>
