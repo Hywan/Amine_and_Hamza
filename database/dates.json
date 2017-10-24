@@ -21,8 +21,13 @@
     },
     {
         "date"       : "2017-09-22",
-        "description": "Cinema City Club",
+        "description": "City Club",
         "location"   : "Pully, Switzerland"
+    },
+    {
+        "date"       : "2017-08-26",
+        "description": "Jetée de la Compagnie",
+        "location"   : "Lausanne, Switzerland"
     },
     {
         "date"       : "2017-07-29",
@@ -35,14 +40,19 @@
         "location"   : "Moscow, Russia"
     },
     {
+        "date"       : "2017-07-15",
+        "description": "Festival International de Hammamet",
+        "location"   : "Hamammet, Tunisia"
+    },
+    {
         "date"       : "2017-07-09",
         "description": "Montreux Jazz Festival",
         "location"   : "Montreux, Switzerland"
     },
     {
-        "date"       : "2017-08-26",
-        "description": "Jetée de la Compagnie",
-        "location"   : "Lausanne, Switzerland"
+        "date"       : "2017-07-02",
+        "description": "Long Lake Classical Festival",
+        "location"   : "Lugano, Switzerland"
     },
     {
         "date"       : "2017-06-04",
@@ -50,10 +60,29 @@
         "location"   : "Colmar, France"
     },
     {
-        "date"       : "2017-05-23",
-        "date"       : "2017-04-11",
-        "description": "Théâtre de Vidy",
-        "location"   : "Lausanne, Switzerland"
+        "date"       : "2017-05-21",
+        "description": "Museum of Ethnography",
+        "location"   : "Zürich, Switzerland"
+    },
+    {
+        "date"       : "2017-05-12",
+        "description": "Locarno Folk",
+        "location"   : "Ascona, Switzerland"
+    },
+    {
+        "date"       : "2017-05-03",
+        "description": "Out & About Festival",
+        "location"   : "Bern, Switzerland"
+    },
+    {
+        "date"       : "2017-04-29",
+        "description": "Kutlurpunkt",
+        "location"   : "Flawil, Switzerland"
+    },
+    {
+        "date"       : "2017-04-15",
+        "description": "Journées Musicales de Carthage",
+        "location"   : "Carthage, Tunisia"
     },
     {
         "date"       : "2017-04-09",
@@ -94,11 +123,6 @@
         "date"       : "2017-02-25",
         "description": "Moods",
         "location"   : "Zürich, Switzerland"
-    },
-    {
-        "date"       : "2017-02-07",
-        "description": "Long Lake Classical Festival",
-        "location"   : "Lugano, Switzerland"
     },
     {
         "date"       : "2016-11-18",
