@@ -7,7 +7,8 @@
 
 @font-face {
     font-family: Header;
-    src: url('../font/Cottons_Light.woff2') format('woff2');
+    src: url('../font/Cottons_Light.woff2') format('woff2'),
+         url('../font/Cottons_Light.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -77,6 +78,7 @@ header, section {
 }
 
 header {
+    margin-top: 3em;
     height: calc(100vh - 6rem);
     background-image: url('../image/header.png');
 }
@@ -202,13 +204,16 @@ table {
     }
 
 .dates {
-    font-family: Header;
+    font-family: Header, Avenir;
     font-size: 1.5rem;
     text-transform: uppercase;
+    margin: 0 auto;
+    width: auto;
 }
 
     .dates tr {
         position: relative;
+        overflow: hidden;
     }
 
     .dates tr::after {
@@ -243,7 +248,7 @@ table {
     }
 
     .dates tbody {
-        overflow: scroll;
+        overflow-y: scroll;
         display: block;
         height: 60vh;
         min-height: 100px;
@@ -366,6 +371,7 @@ section:target, h1:target, h2:target, h3:target, h4:target {
     }
 
 .album {
+    max-width: 95%;
     display: flex;
     flex-direction: column;
 }
@@ -373,6 +379,7 @@ section:target, h1:target, h2:target, h3:target, h4:target {
     .album__details {
         display: flex;
         flex-direction: row;
+        max-width: 100%;
     }
 
     .album__title {
@@ -393,6 +400,15 @@ section:target, h1:target, h2:target, h3:target, h4:target {
         flex-direction: column;
         justify-content: center;
         list-style: none;
+        max-width: 100%;
+    }
+
+    .album__track > span {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
 
     .album__stores {
@@ -412,7 +428,16 @@ section:target, h1:target, h2:target, h3:target, h4:target {
             align-items: center;
         }
 
+        .album {
+            font-size: .9rem;
+        }
+
+        .album__title {
+            font-size: 2.4rem;
+        }
+
         .album__cover {
+            max-width: 25vh;
             padding-right: 0;
             padding-bottom: 1rem;
         }
