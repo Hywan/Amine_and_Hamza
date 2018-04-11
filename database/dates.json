@@ -1,5 +1,55 @@
 [
     {
+        "date"       : "2018-07-26",
+        "description": "Les heures d'été",
+        "location"   : "Nantes, France"
+    },
+    {
+        "date"       : "2018-07-11",
+        "description": "Jazz à Vienne",
+        "location"   : "Vienne, France"
+    },
+    {
+        "date"       : "2018-07-07",
+        "description": "Rudolstadt Festival",
+        "location"   : "Rudolstadt, Germany"
+    },
+    {
+        "date"       : "2018-07-06",
+        "description": "Rudolstadt Festival",
+        "location"   : "Rudolstadt, Germany"
+    },
+    {
+        "date"       : "2018-05-17",
+        "description": "Afro-Pfingsten Festival",
+        "location"   : "Winterthur, Switzerland"
+    },
+    {
+        "date"       : "2018-05-13",
+        "description": "South Korea Tour",
+        "location"   : "South Korea"
+    },
+    {
+        "date"       : "2018-05-12",
+        "description": "South Korea Tour",
+        "location"   : "South Korea"
+    },
+    {
+        "date"       : "2018-05-11",
+        "description": "South Korea Tour",
+        "location"   : "South Korea"
+    },
+    {
+        "date"       : "2018-05-04",
+        "description": "Alhambra",
+        "location"   : "Genève, Switzerland"
+    },
+    {
+        "date"       : "2018-04-20",
+        "description": "Salle communale",
+        "location"   : "Renens, Switzerland"
+    },
+    {
         "date"       : "2018-02-24",
         "description": "Kreuz",
         "location"   : "Nidau, Switzerland"
