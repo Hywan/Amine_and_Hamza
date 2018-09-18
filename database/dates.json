@@ -1,5 +1,40 @@
 [
     {
+        "date"       : "2018-11-10",
+        "description": "To Be Announced",
+        "location"   : "Italy"
+    },
+    {
+        "date"       : "2018-11-09",
+        "description": "Wunderkammer",
+        "location"   : "Trieste, Italy"
+    },
+    {
+        "date"       : "2018-11-08",
+        "description": "Faux Nez",
+        "location"   : "Lausanne, Switzerland"
+    },
+    {
+        "date"       : "2018-11-07",
+        "description": "Studio de l'Ermitage",
+        "location"   : "Paris, France"
+    },
+    {
+        "date"       : "2018-10-12",
+        "description": "MJC Chamonix",
+        "location"   : "Chamonix, France"
+    },
+    {
+        "date"       : "2018-10-05",
+        "description": "Théâtre de L'Échandole",
+        "location"   : "Yverdon-les-Bains, Switzerland"
+    },
+    {
+        "date"       : "2018-09-08",
+        "description": "Arc-En-Ciel",
+        "location"   : "Villeneuve, Switzerland"
+    },
+    {
         "date"       : "2018-07-26",
         "description": "Les heures d'été",
         "location"   : "Nantes, France"
