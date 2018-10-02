@@ -331,6 +331,11 @@ section:target, h1:target, h2:target, h3:target, h4:target {
     padding-top: 8rem;
 }
 
+strong {
+    color: rgb(249, 132, 49);
+    font-weight: normal;
+}
+
 .text__center,
 .text__center * {
     text-align: center;
