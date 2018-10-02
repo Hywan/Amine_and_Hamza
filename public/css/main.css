@@ -477,6 +477,10 @@ section:target, h1:target, h2:target, h3:target, h4:target {
     height: 1.2em;
 }
 
+svg {
+    fill: currentColor;
+}
+
 svg path {
     stroke: currentColor;
     stroke-width: 3;
