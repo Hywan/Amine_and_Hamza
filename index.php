@@ -139,7 +139,7 @@
         <?php foreach (json_decode(file_get_contents('database/albums.json')) as $album): ?>
         <div class="album-panel">
           <div class="album">
-            <h1 class="album__title"><?php echo $album->title ?></h1>
+            <div class="album__title"><h1><?php echo $album->title ?></h1></div>
 
             <div class="album__details">
               <div class="album__cover">

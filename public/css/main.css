@@ -359,96 +359,122 @@ strong {
 
 .albums {
     width: 100%;
-    overflow: auto;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
     white-space: nowrap;
     padding-bottom: 1rem;
-    -webkit-scroll-snap-points-x: repeat(100%);
-    -webkit-scroll-snap-type: mandatory;
-    -ms-scroll-snap-points-x: repeat(100%);
-    -ms-scroll-snap-type: mandatory;
-    scroll-snap-points-x: repeat(100%);
-    scroll-snap-type: mandatory;
 }
 
-    .albums > .album-panel {
-        width: 100%;
-        display: inline-block;
+.album-panel {
+    scroll-snap-align: start;
+    width: 80%;
+    display: inline-block;
+    padding: 0 1rem;
+    background: linear-gradient(rgba(255, 255, 255, .15), 20%, transparent);
+}
+
+    .album-panel + .album-panel {
+        margin-left: 2rem;
     }
 
 .album {
-    max-width: 95%;
-    display: flex;
-    flex-direction: column;
+    max-width: 100%;
+    display: grid;
+    grid-template-areas:
+        "title"
+        "details"
+        "stores";
+    gap: 2rem;
+}
+
+    .album__title {
+        position: relative;
+        grid-area: title;
+        padding: 0 2rem;
+    }
+
+.album__title > h1 {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    display: inline;
 }
 
     .album__details {
-        display: flex;
-        flex-direction: row;
-        max-width: 100%;
+        grid-area: details;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
     }
 
-    .album__title {
-        margin-bottom: 2rem;
-    }
-
-    .album__cover {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        align-self: center;
-        padding-right: 2rem;
-    }
-
-    .album__tracks {
-        flex: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        list-style: none;
-        max-width: 100%;
-    }
-
-    .album__track > span {
-        display: block;
-        width: 100%;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-    }
-
-    .album__stores {
-        display: flex;
-        list-style: none;
-        margin-top: 2rem;
-        justify-content: center;
-    }
-
-        .album__store {
-            margin: 0 1rem;
+        .album__cover {
+            grid-column: 1 / 2;
+            justify-self: center;
         }
 
-    @media all and (max-width: 850px) {
-        .album, .album__details {
+        .album__tracks {
+            grid-column: 2 / 4;
+            display: flex;
             flex-direction: column;
-            align-items: center;
+            justify-content: center;
+            list-style: none;
+            max-width: 70vw;
+        }
+
+        .album__track > span {
+            display: block;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+    .album__stores {
+        grid-area: stores;
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        gap: .5rem 2rem;
+    }
+
+    @supports not (gap: 1) {
+        .album__store + .album__store {
+            margin-left: 2rem;
+        }
+    }
+
+    @media all and (max-width: 850px) {
+        .album-panel {
+            padding: 0;
         }
 
         .album {
             font-size: .9rem;
         }
 
-        .album__title {
-            font-size: 2.4rem;
+        .album__title > h1 {
+            font-size: 2rem;
         }
 
-        .album__cover {
-            max-width: 25vh;
-            padding-right: 0;
-            padding-bottom: 1rem;
+        .album__details {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        .album__tracks {
+            grid-column: 1 / 2;
+            justify-self: center;
         }
 
         .album__stores {
             flex-direction: column;
+            justify-self: center;
+        }
+
+        @supports not (gap: 1) {
+            .album__store + .album__store {
+                margin-top: .5rem;
+                margin-left: initial;
+            }
         }
     }
 
