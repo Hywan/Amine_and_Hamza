@@ -1,8 +1,23 @@
 [
     {
-        "date"       : "2018-11-10",
-        "description": "To Be Announced",
-        "location"   : "Italy"
+        "date"       : "2019-05-12",
+        "description": "Moods",
+        "location"   : "Zurich, Switzerland"
+    },
+    {
+        "date"       : "2019-04-04",
+        "description": "Ahmet Adnan Saygun Sanat Merkezi",
+        "location"   : "Izmir, Turkey"
+    },
+    {
+        "date"       : "2019-02-17",
+        "description": "Casino d'Orbe",
+        "location"   : "Orbe, Switzerland"
+    },
+    {
+        "date"       : "2019-02-02",
+        "description": "Auditorium del'Istituto Musicales",
+        "location"   : "Rivoli, Italy"
     },
     {
         "date"       : "2018-11-09",
