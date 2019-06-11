@@ -1,8 +1,53 @@
 [
     {
+        "date"       : "2019-12-08",
+        "description": "La Courroie",
+        "location"   : "Avignon, France"
+    },
+    {
+        "date"       : "2019-12-07",
+        "description": "La Courroie",
+        "location"   : "Avignon, France"
+    },
+    {
+        "date"       : "2019-10-02",
+        "description": "Château Rouge",
+        "location"   : "Annemasse, France"
+    },
+    {
+        "date"       : "2019-07-24",
+        "description": "Museu d'Historia de Catalunya",
+        "location"   : "Barcelona, Spain"
+    },
+    {
+        "date"       : "2019-07-23",
+        "description": "Festival Suoni Mobili",
+        "location"   : "Milan, Italy"
+    },
+    {
+        "date"       : "2019-07-22",
+        "description": "Transhumance Festival",
+        "location"   : "Lozère, France"
+    },
+    {
+        "date"       : "2019-05-19",
+        "description": "Église de Mathod",
+        "location"   : "Mathod, Switzerland"
+    },
+    {
         "date"       : "2019-05-12",
         "description": "Moods",
         "location"   : "Zurich, Switzerland"
+    },
+    {
+        "date"       : "2019-04-26",
+        "description": "CSS",
+        "location"   : "Schio, Italy"
+    },
+    {
+        "date"       : "2019-04-25",
+        "description": "Auditorium Orto Botanico",
+        "location"   : "Padova, Italy"
     },
     {
         "date"       : "2019-04-04",
